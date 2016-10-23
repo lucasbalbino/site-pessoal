@@ -1,23 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Lucas Balbino</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
-<body>
-<h1>Coming soon</h1>
 
-<h2>A personal website</h2>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<div class="social">
-    <div class="media"><a href="mailto:hi@lucasbalbino.com"><img src="img/email.png"></a></div>
-    <div class="media"><a href="https://linkedin.com/in/lucasbalbino"><img src="img/linkedin.png"></a></div>
-    <div class="media"><a href="https://facebook.com/balbinolucas"><img src="img/facebook.png"></a></div>
-    <div class="media"><a href="https://twitter.com/balbinolucas"><img src="img/twitter.png"></a></div>
-</div>
+<!--Navigation -->
+<!--<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">-->
+                <!--Menu <i class="fa fa-bars"></i>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand page-scroll" href="#page-top">-->
+                <!--<i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse navbar-right navbar-main-collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--&lt;!&ndash; Hidden li included to remove active class from about link when scrolled up past about section &ndash;&gt;-->
+                <!--<li class="hidden">-->
+                    <!--<a href="#page-top"></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll" href="#summary">Summary</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll" href="#portfolio-title">Portfolio</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll" href="#work-title">Work</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll" href="#study-title">Studies</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll" href="#contact">Contact</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.container &ndash;&gt;-->
+<!--</nav>-->
+
+<nav id="parallax-nav" class="navbar color-weight-dark">
+    <ul>
+
+        <li id="parallax-nav-item-about"><a class="page-scroll" href="#page-top"><span
+                class="nav-title">SOBRE</span></a></li>
+
+        <li id="parallax-nav-item-summary"><a class="page-scroll" href="#summary"><span class="nav-title">RESUMO</span></a>
+        </li>
+
+        <li id="parallax-nav-item-portfolio"><a class="page-scroll" href="#portfolio-title"><span class="nav-title">PORTFÓLIO</span></a>
+        </li>
+
+        <li id="parallax-nav-item-work"><a class="page-scroll" href="#work-title"><span
+                class="nav-title">TRABALHO</span></a></li>
+
+        <li id="parallax-nav-item-study"><a class="page-scroll" href="#study-title"><span class="nav-title">ESTUDO E LÍNGUAS</span></a>
+        </li>
+
+        <li id="parallax-nav-item-skills"><a class="page-scroll" href="#skill-title"><span class="nav-title">COMPETÊNCIAS E CERTIFICADOS</span></a>
+        </li>
+
+        <li id="parallax-nav-item-contact"><a class="page-scroll" href="#contact"><span class="nav-title">CONTATO</span></a>
+        </li>
+
+    </ul>
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">Lucas Balbino</h1>
+
+                    <p>25 anos | brasileiro | solteiro</p>
+
+                    <div class="col-md-4 col-sm-4">
+                        <a href="#summary" class="btn btn-default page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                            Versão Completa
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <a href="#summary" class="btn btn-default page-scroll">
+                            Currículo em .pdf
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <a href="#summary" class="btn btn-default page-scroll">
+                            Versão Compacta
+                            <i class="fa fa-angle-double-right animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Summary Section -->
+<section id="summary" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>Foco nas áreas de gerenciamento de serviços de TI e em mapeamento de processos. Bom relacionamento
+                interpessoal, rápido aprendizado, espírito inovador e sede de conhecimento. </p>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio-Title Section -->
+<section id="portfolio-title" class="content-section text-center">
+    <div class="portfolio-title">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Portfólio</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio-Content Section -->
+<section id="portfolio-content" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="img/BelayOn.jpg">
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive" src="img/bag.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- Work-Title Section -->
+<section id="work-title" class="content-section text-center">
+    <div class="work-title">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Trabalho</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work-Content Section -->
+<section id="work-content" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>OOBJ TECNOLOGIA DA INFORMAÇÃO</h1>
+
+            <h2>ANALISTA DE NEGÓCIOS</h2>
+            <h4>DE NOVEMBRO DE 2014 ATÉ ATUALMENTE (1 ANO E 5 MESES)</h4>
+
+            <p>Responsável pela comunicação entre a área Comercial (negócio) e a Operação (Suporte técnico e
+                Desenvolvimento). Relacionamento direto com Clientes e gerenciamento de Canais. Criação de material para
+                Inteligência de Mercado (análise de concorrentes, aporte para prospecção). Geração de conteúdo para o
+                site institucional e mídias sociais e apoio na gestão do Marketing (Marketing Digital, Endomarking).</p>
+
+            <h1>OOBJ TECNOLOGIA DA INFORMAÇÃO</h1>
+
+            <h2>ANALISTA DE SUPORTE</h2>
+            <h4>DE MARÇO DE 2013 ATÉ NOVEMBRO DE 2014 (1 ANO E 9 MESES)</h4>
+
+            <p>Realização de treinamentos para novos colaboradores e capacitação dos veteranos, auditoria em chamados
+                pela ferramenta Qualitor, mapeamento de processos do departamento Suporte, atendimento a Clientes por
+                telefone, email e portal Web, levantamento de estatísticas de desempenho mensal e documentação das
+                soluções.</p>
+
+            <h1>CENTRO DE INFORMAÇÃO, DOCUMENTAÇÃO E ARQUIVO (CIDARQ)</h1>
+
+            <h2>ANALISTA DE PROCESSOS (ESTÁGIO)</h2>
+            <h4>DE NOVEMBRO DE 2012 ATÉ FEVEREIRO DE 2013 (4 MESES)</h4>
+
+            <p>Mapeamento de processos organizacionais da Coordenadoria de Registro de Diplomas, melhoria do processo de
+                aquisição de material da Universidade Federal de Goiás, entrevista para coleta de dados e auxílio na
+                elaboração do novo índice de tipos documentais.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Study-Title Section -->
+<section id="study-title" class="content-section text-center">
+    <div class="study-title">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Studies</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Study-Content Section -->
+<section id="study-content" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>UNIVERSIDADE FEDERAL DE GOIÁS (UFG)</h1>
+
+            <h2>MESTRADO EM CIÊNCIA DA COMPUTAÇÃO</h2>
+            <h4>DE MARÇO DE 2015 ATÉ DEZEMBRO DE 2015 (1 ANO) - TRANCADO</h4>
+
+            <p>Linha de pesquisa: Engenharia de software, Banco de dados e Informática e educação.</p>
+
+            <h1>UNIVERSIDADE FEDERAL DE GOIÁS (UFG)</h1>
+
+            <h2>BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO</h2>
+            <h4>DE MARÇO DE 2009 ATÉ MARÇO DE 2013 (4 ANOS)</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Skill-Title Section -->
+<section id="skill-title" class="content-section text-center">
+    <div class="skill-title">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Studies</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skill-Content Section -->
+<section id="skill-content" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>UNIVERSIDADE FEDERAL DE GOIÁS (UFG)</h1>
+
+            <h2>MESTRADO EM CIÊNCIA DA COMPUTAÇÃO</h2>
+            <h4>DE MARÇO DE 2015 ATÉ DEZEMBRO DE 2015 (1 ANO) - TRANCADO</h4>
+
+            <p>Linha de pesquisa: Engenharia de software, Banco de dados e Informática e educação.</p>
+
+            <h1>UNIVERSIDADE FEDERAL DE GOIÁS (UFG)</h1>
+
+            <h2>BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO</h2>
+            <h4>DE MARÇO DE 2009 ATÉ MARÇO DE 2013 (4 ANOS)</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container text-center">
+        <p>Copyright &copy; Your Website 2016</p>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/main.js"></script>
+
 </body>
-</html>
+
+</ht
