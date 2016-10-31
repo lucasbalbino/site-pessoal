@@ -25,3 +25,16 @@ $(function () {
 $('.navbar-collapse ul li a').click(function () {
     $(this).closest('.collapse').collapse('toggle');
 });
+
+$('.parallax-bg').each(function(){
+    var $obj = $(this);
+
+    $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+        var bgpos = '50% calc('+ yPos + 'px + 100%)';
+
+        $obj.css('background-position', bgpos );
+
+    });
+});
