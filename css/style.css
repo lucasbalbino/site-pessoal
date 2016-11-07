@@ -200,14 +200,14 @@ a:focus {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.btn-default i.animated, .btn-circle i.animated {
+.btn-default i.animated, .btn-circle i.animated, .back-to-top-link i.animated {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
 }
 
-.btn-default:hover i.animated, .btn-circle:hover i.animated {
+.btn-default:hover i.animated, .btn-circle:hover i.animated, .back-to-top-link:hover i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
@@ -366,14 +366,12 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: #666666;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: #666666;
 }
 
 img::selection {
@@ -697,71 +695,25 @@ body {
  * Skills
  * ------------------------------------- */
 
-.skill {
-    padding: 40px 20px;
-    margin: 20px;
-    border: 2px solid #391a32;
-    text-align: center;
-}
-
-.skill.active {
-    color: #fff;
-    background-color: #391a32;
+.skills-set {
+    margin: 50px 0;
+    font-size: 18px;
+    line-height: 50px;
     text-align: left;
 }
 
-.skill h4 {
-    font-size: 24px;
-    color: #391a32;
-    margin: 0;
-    display: inline-block;
-    text-transform: none;
-}
-
 .skill p {
-    display: none;
-}
-
-.skill.active h4 {
-    color: #fff;
-    margin: 0 35px;
-}
-
-.skill.active p {
     font-size: 16px;
-    padding-top: 5px;
+    padding: 10px 48px;
     margin: 0;
-    display: inline-block;
 }
 
-.skill .progress {
-    display: inline-block;
-    height: 25px;
-    margin: 0;
-    border-radius: 0;
-    width: 33.33333333%;
-    border: 1px solid #999999;
+.skill img {
+    padding-right: 10px;
 }
 
-.skill .progress-bar {
-    background-color: #391a32;
-    padding-top: 3px;
-    font-size: 11px;
-}
-
-.skill.active .progress {
-    display: inline-block;
-    float: right;
-    height: 35px;
-    margin: 0;
-    border-radius: 0;
-    width: 33.33333333%;
-}
-
-.skill.active .progress-bar {
-    background-color: #999999;
-    padding-top: 8px;
-    font-size: 14px;
+.skill i {
+    color: #391a32;
 }
 
 /* -------------------------------------
