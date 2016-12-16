@@ -1,0 +1,21 @@
+{
+  "name": "site-pessoal",
+  "version": "0.0.0",
+  "authors": [
+    "lucasbalbino <lucabmf@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "uikit": "^2.27.2",
+    "moment": "^2.15.2"
+  }
+}

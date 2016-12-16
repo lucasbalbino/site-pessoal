@@ -2,25 +2,44 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Portifólio de Lucas Balbino">
+    <meta name="keywords" content="Lucas Balbino"/>
+    <meta name="author" content="Lucas Balbino">
+
+    <meta property="og:title" content="Lucas Balbino"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://lucasbalbino.com/img/lucas-open-graph.jpg"/>
+    <meta property="og:url" content="http://lucasbalbino.com"/>
+    <meta property="og:description" content="Quer saber mais sobre mim? Acesse lucasbalbino.com"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@balbinolucas"/>
+    <meta name="twitter:creator" content="@balbinolucas"/>
+    <meta name="twitter:url" content="http://lucasbalbino.com"/>
+    <meta name="twitter:title" content="Lucas Balbino"/>
+    <meta name="twitter:description" content="Quer saber mais sobre mim? Acesse lucasbalbino.com"/>
+    <meta name="twitter:image" content="http://lucasbalbino.com/img/lucas-open-graph.jpg"/>
 
     <title>Lucas Balbino</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
 
-    <link rel="stylesheet" href="vendor/uikit/css/uikit.min.css"/>
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css"/>
+    <link rel="stylesheet" href="bower_components/uikit/css/components/slideshow.min.css"/>
+    <link rel="stylesheet" href="bower_components/uikit/css/components/slidenav.min.css"/>
+    <link rel="stylesheet" href="bower_components/uikit/css/components/dotnav.min.css"/>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
     <!-- Theme CSS -->
@@ -30,26 +49,54 @@
 <body id="page-top" data-spy="scroll" data-target="#parallax-nav">
 
 <nav id="parallax-nav" class="navbar color-weight-light">
+    <!-- Nav Parallax -->
     <ul>
 
-        <li id="parallax-nav-item-about"><a class="page-scroll" href="#page-top"><span
-                class="nav-title">SOBRE</span></a></li>
-
-        <li id="parallax-nav-item-summary"><a class="page-scroll" href="#summary"><span class="nav-title">RESUMO</span></a>
+        <li id="parallax-nav-item-translate" class="parallax-nav-item">
+            <img class="lang-selector trn" src="img/en.png" data-value="en">
+            <span class="nav-title trn">Change to English</span>
         </li>
 
-        <li id="parallax-nav-item-portfolio"><a class="page-scroll" href="#portfolio-title"><span class="nav-title">PORTFÓLIO</span></a>
+        <li id="parallax-nav-item-about" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#page-top">
+                <span class="nav-title trn">Sobre</span>
+            </a>
         </li>
 
-        <li id="parallax-nav-item-skills"><a class="page-scroll" href="#skill-title"><span class="nav-title">COMPETÊNCIAS E CERTIFICADOS</span></a>
-
-        <li id="parallax-nav-item-work"><a class="page-scroll" href="#work-title"><span
-                class="nav-title">TRABALHO</span></a></li>
-
-        <li id="parallax-nav-item-study"><a class="page-scroll" href="#study-title"><span class="nav-title">ESTUDO E LÍNGUAS</span></a>
+        <li id="parallax-nav-item-summary" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#summary">
+                <span class="nav-title trn">Resumo</span>
+            </a>
         </li>
 
-        <li id="parallax-nav-item-contact"><a class="page-scroll" href="#contact"><span class="nav-title">CONTATO</span></a>
+        <li id="parallax-nav-item-portfolio" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#portfolio-title">
+                <span class="nav-title trn" data-trn-key="portfolio">Portifólio</span>
+            </a>
+        </li>
+
+        <li id="parallax-nav-item-skills" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#skill-title">
+                <span class="nav-title trn" data-trn-key="skills">Competências e Certificados</span>
+            </a>
+        </li>
+
+        <li id="parallax-nav-item-work" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#work-title">
+                <span class="nav-title trn">Trabalho</span>
+            </a>
+        </li>
+
+        <li id="parallax-nav-item-study" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#study-title">
+                <span class="nav-title trn" data-trn-key="study">Estudo e Línguas</span>
+            </a>
+        </li>
+
+        <li id="parallax-nav-item-contact" class="parallax-nav-item">
+            <a data-uk-smooth-scroll="{duration: 2500}" href="#contact">
+                <span class="nav-title trn">Contato</span>
+            </a>
         </li>
 
     </ul>
@@ -63,23 +110,27 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading">Lucas Balbino</h1>
 
-                    <p>25 anos | brasileiro | solteiro</p>
+                    <p class="intro-summary">
+                        <span id="age"></span> |
+                        <span class="trn">brasileiro</span> |
+                        <span class="trn">solteiro</span>
+                    </p>
 
                     <div class="col-md-4 col-sm-4">
-                        <a href="#summary" class="btn btn-default page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                            Versão Completa
+                        <a href="#summary" class="btn btn-default" data-uk-smooth-scroll="{duration: 2500}">
+                            <i class="fa fa-angle-down animated"></i>
+                            <span class="trn">Versão Completa</span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <a href="#summary" class="btn btn-default page-scroll">
-                            Currículo em .pdf
+                        <a id="curriculum" class="btn btn-default">
+                            <span class="trn">Currículo em .pdf</span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <a href="#summary" class="btn btn-default page-scroll">
-                            Versão Compacta
-                            <i class="fa fa-angle-double-right animated"></i>
+                        <a class="btn btn-default" disabled>
+                            <span class="trn">Versão Compacta</span>
+                            <i class="fa fa-angle-right animated"></i>
                         </a>
                     </div>
                 </div>
@@ -92,8 +143,7 @@
 <section id="summary" class="container content-section text-center">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <p data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">Foco nas áreas de gerenciamento de serviços de TI e em mapeamento de processos. Bom relacionamento
-                interpessoal, rápido aprendizado, espírito inovador e sede de conhecimento. </p>
+            <p class="trn" data-trn-key="summary" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}"></p>
         </div>
     </div>
 </section>
@@ -103,7 +153,7 @@
     <div class="portfolio-title parallax-bg" data-speed="15">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Portfólio</h2>
+                <h2 class="trn" data-trn-key="portfolio">Portfólio</h2>
             </div>
         </div>
     </div>
@@ -112,11 +162,56 @@
 <!-- Portfolio-Content Section -->
 <section id="portfolio-content" class="container content-section text-center">
     <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive" src="img/BelayOn.jpg">
+        <!-- Carousel -->
+        <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, animation: 'swipe'}">
+            <ul class="uk-slideshow">
+                <li class="uk-overlay uk-overlay-hover">
+                    <img src="portfolio/img/oobj-indicadores-mockup.jpg"/>
+
+                    <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
+                        <h2>Oobj Indicadores</h2>
+
+                        <p class="trn" data-trn-key="portfolioContent1"></p>
+                        <a class="btn btn-default" disabled>
+                            <span class="trn" data-trn-key="portfolioContentButton1"></span>
+                        </a>
+                        <a class="btn btn-default" disabled>
+                            <span class="trn" data-trn-key="portfolioContentButton2"></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="uk-overlay uk-overlay-hover">
+                    <img src="portfolio/img/oobj-parceiros-mockup.jpg"/>
+
+                    <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
+                        <h2>Oobj Parceiros</h2>
+
+                        <p class="trn" data-trn-key="portfolioContent2"></p>
+                        <a class="btn btn-default" disabled>
+                            <span class="trn" data-trn-key="portfolioContentButton1"></span>
+                        </a>
+                        <a class="btn btn-default" disabled>
+                            <span class="trn" data-trn-key="portfolioContentButton2"></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+               data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                <li data-uk-slideshow-item="0">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="1">
+                    <a href=""></a>
+                </li>
+            </ul>
         </div>
-        <div class="col-md-4">
-            <img class="img-responsive" src="img/bag.jpg">
+        <div class="portfolio-more">
+            <a href="#" class="btn btn-default btn-submit">
+                <span class="trn" data-trn-key="all"></span>
+            </a>
         </div>
     </div>
 </section>
@@ -126,7 +221,7 @@
     <div class="skill-title parallax-bg" data-speed="250">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Competências e Certificados</h2>
+                <h2 class="trn" data-trn-key="skills">Competências e Certificados</h2>
             </div>
         </div>
     </div>
@@ -137,14 +232,50 @@
     <div class="skills-set">
         <div class="skill">
             <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                ITIL
+                HTML 5
             </div>
             <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                CSS 3
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                Javascript
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                Angular JS
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
             </div>
         </div>
         <div class="skill">
@@ -156,10 +287,82 @@
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
             </div>
             <div class="col-md-8 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
-                <p><b>EXIN</b> - ITIL Foundation - Ano 2014</p>
+                <p><img src="img/ribbon-badge-award.png"><b>EXIN</b> - ITIL Foundation - 2014</p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                COBIT
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                BPMN
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                Ionic
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                SQL
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                Java
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                C
+            </div>
+            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
             </div>
         </div>
     </div>
@@ -167,10 +370,10 @@
 
 <!-- Work-Title Section -->
 <section id="work-title" class="content-section text-center">
-    <div class="work-title parallax-bg" data-speed="15">
+    <div class="work-title parallax-bg" data-speed="250">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Trabalho</h2>
+                <h2 class="trn">Trabalho</h2>
             </div>
         </div>
     </div>
@@ -194,16 +397,12 @@
                         <img src="img/oobj.png" alt="Oobj">
                     </h1>
 
-                    <h2>ANALISTA DE NEGÓCIOS</h2>
-                    <h4>de Novembro de 2014 até atualmente (1 ano e 5 meses)</h4>
+                    <h2 class="trn" data-trn-key="workJob1"></h2>
+                    <h4><span class="trn" data-trn-key="workJobTime1"></span> (<span id="timeline-current"></span>)</h4>
 
-                    <p>Responsável pela comunicação entre a área Comercial (negócio) e a Operação (Suporte técnico e
-                        Desenvolvimento). Relacionamento direto com Clientes e gerenciamento de Canais. Criação de
-                        material para Inteligência de Mercado (análise de concorrentes, aporte para prospecção). Geração
-                        de conteúdo para o site institucional e mídias sociais e apoio na gestão do Marketing (Marketing
-                        Digital, Endomarking).</p>
+                    <p class="trn" data-trn-key="workContent1"></p>
 
-                    <span>Ferramentas utilizadas:</span>
+                    <span class="trn" data-trn-key="tools"></span>
 
                     <div class="logos">
                         <img src="img/tools/google-analytics.png">
@@ -231,15 +430,12 @@
                         <img src="img/oobj.png" alt="Oobj">
                     </h1>
 
-                    <h2>ANALISTA DE SUPORTE</h2>
-                    <h4>de Março de 2013 até Novembro de 2014 (1 ano e 9 meses)</h4>
+                    <h2 class="trn" data-trn-key="workJob2"></h2>
+                    <h4 class="trn" data-trn-key="workJobTime2"></h4>
 
-                    <p>Realização de treinamentos para novos colaboradores e capacitação dos veteranos, auditoria em
-                        chamados pela ferramenta Qualitor, mapeamento de processos do departamento Suporte, atendimento
-                        a Clientes por telefone, email e portal Web, levantamento de estatísticas de desempenho mensal e
-                        documentação das soluções.</p>
+                    <p class="trn" data-trn-key="workContent2"></p>
 
-                    <span>Ferramentas utilizadas:</span>
+                    <span class="trn" data-trn-key="tools"></span>
 
                     <div class="logos">
                         <img src="img/tools/qualitor.png">
@@ -257,14 +453,12 @@
                         <img src="img/cidarq.png" alt="CIDARQ">
                     </h1>
 
-                    <h2>ANALISTA DE PROCESSOS (ESTÁGIO)</h2>
-                    <h4>de Novembro de 2012 até Fevereiro de 2013 (4 meses)</h4>
+                    <h2 class="trn" data-trn-key="workJob3"></h2>
+                    <h4 class="trn" data-trn-key="workJobTime3"></h4>
 
-                    <p>Mapeamento de processos organizacionais da Coordenadoria de Registro de Diplomas, melhoria do
-                        processo de aquisição de material da Universidade Federal de Goiás, entrevista para coleta de
-                        dados e auxílio na elaboração do novo índice de tipos documentais.</p>
+                    <p class="trn" data-trn-key="workContent3"></p>
 
-                    <span>Ferramentas utilizadas:</span>
+                    <span class="trn" data-trn-key="tools"></span>
 
                     <div class="logos">
                         <img src="img/tools/bizagi.png">
@@ -286,7 +480,7 @@
     <div class="study-title parallax-bg" data-speed="250">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Estudo e Línguas</h2>
+                <h2 class="trn" data-trn-key="study">Estudo e Línguas</h2>
             </div>
         </div>
     </div>
@@ -300,37 +494,41 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td class="step step3">Mestrado</td>
+                    <td class="step active trn" data-trn-key="studyLevel1"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td class="step step2">Bacharelado</td>
-                    <td class="step3"></td>
+                    <td class="step trn" data-trn-key="studyLevel2"></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td class="step step1">Ensino Médio</td>
-                    <td class="step2"></td>
-                    <td class="step3"></td>
+                    <td class="step trn" data-trn-key="studyLevel3"></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
-            <div class="stairs-content">
-                <div>
+            <div id="stairs-content">
+                <div class="step-content active">
                     <h1>Universidade Federal de Goiás (UFG)</h1>
 
-                    <h2>Mestrado em Ciência da Computação</h2>
-                    <h4>de Março de 2015 até Dezembro de 2015 (1 ano) - TRANCADO</h4>
+                    <h2><span class="trn" data-trn-key="studyLevel1"></span> <span class="trn"
+                                                                                   data-trn-key="studyCourse"></span>
+                    </h2>
+                    <h4 class="trn" data-trn-key="studyTime1"></h4>
 
-                    <p>Linha de pesquisa: Engenharia de software, Banco de dados e Informática e educação.</p>
+                    <p class="trn" data-trn-key="studyLevel1Desc"></p>
                 </div>
-                <div>
+                <div class="step-content">
                     <h1>Universidade Federal de Goiás (UFG)</h1>
 
-                    <h2>Bacharelado em Ciência da Computação</h2>
-                    <h4>de Março de 2009 até Março de 2013 (4 anos)</h4>
+                    <h2><span class="trn" data-trn-key="studyLevel2"></span> <span class="trn"
+                                                                                   data-trn-key="studyCourse"></span>
+                    </h2>
+                    <h4 class="trn" data-trn-key="studyTime2"></h4>
                 </div>
-                <div>
+                <div class="step-content">
                     <h1>Colégio Órion Vestibulares</h1>
-                    <h4>de Janeiro de 2006 até Dezembro de 2008 (3 anos)</h4>
+                    <h4 class="trn" data-trn-key="studyTime3"></h4>
                 </div>
             </div>
         </div>
@@ -338,12 +536,13 @@
     <div class="row">
         <div class="languages-set">
             <div class="language">
-                <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                    <img src="img/brazil.png">
-                    Português brasileiro
+                <div class="col-md-4 col-md-offset-2"
+                     data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                    <img src="img/pt_br.png">
+                    <span class="trn" data-trn-key="language1"></span>
                 </div>
                 <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                    <span class="level">Nativo</span>
+                    <span class="level trn" data-trn-key="languageLevel1"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -352,12 +551,13 @@
                 </div>
             </div>
             <div class="language">
-                <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                    <img src="img/united-kingdom.png">
-                    Inglês
+                <div class="col-md-4 col-md-offset-2"
+                     data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                    <img src="img/en.png">
+                    <span class="trn" data-trn-key="language2"></span>
                 </div>
                 <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                    <span class="level">Avançado</span>
+                    <span class="level trn" data-trn-key="languageLevel2"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -365,18 +565,20 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <div class="col-md-8 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
-                    <p><b>TOEFL&reg; ITP</b> - Ano 2015 - Pontuação: <b>580</b></p>
+                    <p><b>TOEFL&reg; ITP</b> - 2015 - <span class="trn">Pontuação</span>: <b>580</b></p>
 
-                    <p><b>EFSET</b> Quick English Check - Pontuação: <b>Advanced / Proficient (CEFR C1/C2)</b></p>
+                    <p><b>EFSET</b> Quick English Check - <span class="trn">Pontuação</span>: <b>Advanced / Proficient
+                        (CEFR C1/C2)</b></p>
                 </div>
             </div>
             <div class="language">
-                <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                <div class="col-md-4 col-md-offset-2"
+                     data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                     <img src="img/deaf-sign-language.png">
                     LIBRAS
                 </div>
                 <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                    <span class="level">Inicial</span>
+                    <span class="level trn" data-trn-key="languageLevel3"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
@@ -388,48 +590,60 @@
     </div>
 </section>
 
-<!-- Footer -->
+<!-- Contact Section -->
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Contato</h2>
+                <h2 class="trn">Contato</h2>
             </div>
             <div class="col-md-8 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
-                <img class="img-responsive" src="img/Lucas-Balbino-03.jpg" data-uk-scrollspy="{cls:'uk-animation-scale-down', repeat: false}">
+                <img class="img-responsive" src="img/Lucas-Balbino-03.jpg"
+                     data-uk-scrollspy="{cls:'uk-animation-scale-down', repeat: false}">
 
                 <div class="social">
                     <i class="fa fa-envelope"></i>
-                    hi@lucasbalbino.com
+                    <a href="mailto:hi@lucasbalbino.com">hi@lucasbalbino.com</a>
                 </div>
                 <div class="social">
                     <i class="fa fa-linkedin-square"></i>
-                    br.linkedin.com/in/lucasbalbino
+                    <a href="https://www.linkedin.com/in/lucasbalbino">linkedin.com/in/lucasbalbino</a>
+                </div>
+                <div class="social">
+                    <i class="fa fa-github-square"></i>
+                    <a href="https://www.github.com/lucasbalbino">github.com/lucasbalbino</a>
                 </div>
                 <div class="social">
                     <i class="fa fa-facebook-square"></i>
-                    fb.com/balbinolucas
+                    <a href="https://fb.com/balbinolucas">fb.com/balbinolucas</a>
                 </div>
                 <div class="social">
                     <i class="fa fa-twitter-square"></i>
-                    twitter.com/balbinolucas
+                    <a href="https://twitter.com/balbinolucas">twitter.com/balbinolucas</a>
                 </div>
             </div>
             <div class="col-md-8 col-md-offset-2">
                 <div class="contact-form">
-                    <p>ou preencha o formulário:</p>
+                    <p class="trn" data-trn-key="fillForm"></p>
 
-                    <form action="mailto:hi@lucasbalbino.com" method="post" enctype="text/plain">
-                        <label for="name">Nome </label> <input type="text" name="name" id="name"
-                                                               placeholder="Seu nome aqui"><br>
-                        <label for="email">Email </label> <input type="email" name="email" id="email"
-                                                                 placeholder="Seu email aqui"><br>
-                        <label for="message">Mensagem </label> <textarea name="message" id="message"
-                                                                         placeholder="Solte suas palavras"></textarea><br>
+                    <div class="successForm trn" data-trn-key="successForm">Mensagem enviada com sucesso!</div>
+                    <div class="errorForm trn" data-trn-key="errorForm">Há algum erro no formulário.</div>
+
+                    <form id="form">
+                        <label for="formName" class="trn" data-trn-key="formField1"></label>
+                        <input type="text" name="formName" id="formName" placeholder="Seu nome aqui"><br>
+
+                        <label for="formEmail" class="trn" data-trn-key="formField2"></label>
+                        <input type="email" name="formEmail" id="formEmail" placeholder="Seu email aqui"><br>
+
+                        <label for="formMessage" class="trn" data-trn-key="formField3"></label>
+                        <textarea name="formMessage" id="formMessage" placeholder="Solte suas palavras"></textarea><br>
 
                         <div class="pull-right">
-                            <button type="reset" class="btn btn-default">Limpar</button>
-                            <button type="submit" class="btn btn-default btn-submit">Enviar</button>
+                            <button type="reset" class="btn btn-default trn" data-trn-key="formButton2">Limpar</button>
+                            <button type="submit" class="btn btn-default btn-submit trn" data-trn-key="formButton1">
+                                Enviar
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -438,27 +652,32 @@
     </div>
 </section>
 
+<!-- Footer -->
 <footer id="footer">
     <div class="back-to-top-link">
-        <a class="page-scroll" href="#page-top">
-            <i class="fa fa-angle-up animated"></i>
-            Voltar
+        <a data-uk-smooth-scroll="{duration: 2500}" href="#page-top">
+            <i class="fa fa-angle-up animated"></i><br>
+            <span class="trn" data-trn-key="back"></span>
         </a>
     </div>
 </footer>
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="vendor/uikit/js/uikit.min.js"></script>
+<script src="bower_components/uikit/js/uikit.min.js"></script>
+<script src="bower_components/uikit/js/core/smooth-scroll.min.js"></script>
+<script src="bower_components/uikit/js/components/slideshow.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/translate.js/jquery.translate.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="js/main.js"></script>
+<script src="js/translate.js"></script>
 
 </body>
 
