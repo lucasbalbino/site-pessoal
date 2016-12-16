@@ -58,3 +58,7 @@ bower_components
 
 ### WebStorm ###
 .idea
+
+### Outros ###
+tmp
+src
