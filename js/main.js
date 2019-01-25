@@ -47,15 +47,7 @@ $(document).ready(function () {
     $('#age').text(
         moment().diff(
             moment([1991, 7, 26]), 'years'
-        ) + ' anos'
-    );
-
-    // Set the current timestamp in the current job
-    var diffyears = moment().diff(moment([2014, 10]), 'years');
-    $('#timeline-current').text(
-        diffyears + ' anos e ' + moment().diff(
-            moment([2014, 10]).add(diffyears, 'years'), 'month'
-        ) + ' meses'
+        )
     );
 
     // Send form to email with Formspree
@@ -67,14 +59,14 @@ $(document).ready(function () {
         var email = $('#formEmail');
         var message = $('#formMessage');
 
-        if (name.val() == "" || email.val() == "" || message.val() == "") {
+        if (name.val() === "" || email.val() === "" || message.val() === "") {
             $('.errorForm').slideDown(400);
             return false;
         }
         else {
             $.ajax({
                 method: 'POST',
-                url: 'https://formspree.io/hi@lucasbalbino.com',
+                url: 'https://estreias.com.br/api/contato',
                 data: $('#form').serialize(),
                 datatype: 'json'
             });
@@ -88,9 +80,16 @@ $(document).ready(function () {
     $('#curriculum').click(function (e) {
         var lang = $(".lang-selector").attr("data-value");
         var newLang = languages[(languages.indexOf(lang) + 1) % languages.length];
-        $(this).attr({
-            target: '_blank',
-            href: 'src/LucasBalbino-Curriculum-' + newLang + '.pdf'
-        });
+        if(newLang === "pt_br") {
+            $(this).attr({
+                target: 'blank',
+                href: 'https://bit.ly/LucasBalbinoCurriculo'
+            });
+        } else {
+            $(this).attr({
+                target: 'blank',
+                href: 'https://bit.ly/LucasBalbinoResume'
+            });
+        }
     });
 });

@@ -30,27 +30,29 @@ $(function () {
         "Contato": {
             en: "Contact"
         },
+        age: {
+            en: "-years-old",
+            pt_br: " anos"
+        },
         "brasileiro": {
-            en: "brazillian"
+            en: "Brazilian"
         },
         "solteiro": {
             en: "single"
         },
-        "Vers\xE3o Completa": {
-            en: "Full Version"
+        "more-info": {
+            en: "More Info",
+            pt_br: "Mais Informações"
         },
-        "Curr\xEDculo em .pdf": {
-            en: "Curriculum in .pdf"
-        },
-        "Vers\xE3o Compacta": {
-            en: "Compact Version"
+        "Curr\xEDculo": {
+            en: "R\xE9sum\xE9"
         },
         "Pontua\xE7\xE3o": {
             en: "Score"
         },
         summary: {
-            pt_br: "Eu sou Lucas Balbino e procuro n\xE3o ser apenas criativo, mas tamb\xE9m inovador. Meu foco profissional \xE9 nas \xE1reas de gerenciamento de servi\xE7os de TI e em mapeamento de processos. Possuo um bom relacionamento interpessoal, r\xE1pido aprendizado, esp\xEDrito inovador e sede de conhecimento.",
-            en: "I'm Lucas Balbino and I look for not to seem only criative, but really inovative. My main profissional goal is among IT management areas and in business process management. I demonstrate a fine interpersonal relationship, fast learning, inventive spirit and thirst of knowlegde."
+            pt_br: "Profissional de TI focado na <strong>Gestão de Produto</strong> com espírito não apenas <strong>criativo</strong>, mas <strong>inovador</strong>. Entre meus pontos fortes estão <strong>bom relacionamento interpessoal</strong>, <strong>rápido aprendizado</strong> e <strong>sede de conhecimento</strong>. Com mais de <strong>5 anos</strong> de experiência profissional, sigo evoluindo e aprendendo novas formas de integrar a <strong>Tecnologia</strong> com várias áreas: <strong>Desenvolvimento</strong>, <strong>Marketing</strong>, <strong>Comercial</strong> e <strong>Customer Success</strong>.",
+            en: "IT Professional specialized on <strong>Product Management</strong> with a <strong>creative</strong> spirit and <strong>innovative</strong> behavior. I can list as strengths a impecable <strong>interpersonal relationship</strong>, fast <strong>learning skills</strong> and thirst of <strong>knowledge</strong>. With over <strong>5 years</strong> of work experience, I keep evolving and learning new ways of integrating <strong>Technology</strong> to several areas: <strong>Development</strong>, <strong>Marketing</strong>, <strong>Sales</strong> and <strong>Customer Success</strong>."
         },
         successForm: {
             pt_br: "Mensagem enviada com sucesso!",
@@ -60,19 +62,31 @@ $(function () {
             pt_br: "H\xE1 algum erro no formul\xE1rio.",
             en: "Please check your entries."
         },
+        workJob0: {
+            pt_br: "Gerente de Produto",
+            en: "Product Manager"
+        },
+        workJobTime0: {
+            pt_br: "de Janeiro de 2017 at\xE9 atualmente",
+            en: "January 2017 - Present"
+        },
+        workContent0: {
+            pt_br: "Responsável pela Gestão de Produto da empresa e pela integração entre as áreas Comercial (negócio) e Operação (Suporte e Desenvolvimento). Gerenciamento e acompanhamento do roadmap e do Portfólio." + "<br>" +
+            "Criação de protótipos de interfaces (focadas em UI/UX), análise de requisitos, desenho de fluxos das soluções existentes e de novas funcionalidades. Integração e adequação de produtos de parceiros ao Portfólio da empresa. Aplicação de estratégias de Growth e ferramentas que auxiliem a alavancar os produtos. Comunicação sobre a evolução dos produtos. Documentação e treinamento à equipe sobre os produtos.",
+            en: "Responsible for the company’s Product Management and for Sales (Business) and Operation (Dev and Customer Success) communication. Roadmap and Portfolio’s monitoring and management." + "<br>" +
+            "Interface prototype creation (focused on UI / UX), requirements analysis, flows drawing of existing solutions and new features. Integration and adaptation of partners' products to the company portfolio. Application of Growth strategies and tools to help boost products. Communication about the evolution of products. Documentation and training to the team about the products."
+        },
         workJob1: {
             pt_br: "Analista de Neg\xF3cios",
             en: "IT Business Analyst"
         },
         workJobTime1: {
-            pt_br: "de Novembro de 2014 at\xE9 atualmente",
-            en: "November 2014 - Present"
+            pt_br: "de Novembro de 2014 at\xE9 Janeiro de 2017",
+            en: "November 2014 - January 2017"
         },
         workContent1: {
-            pt_br: "Marketing Digital da empresa incluindo: planejamento de marketing, SEO, CPC, m\xEDdias sociais, estrat\xE9gias de gera\xE7\xE3o de conte\xFAdo (Endomarking), Email Marketing, Analytics, otimiza\xE7\xE3o de Landing Pages, Storytelling, dentre outros assuntos." + "<br>" +
-            "Membro integrante da equipe de Gest\xE3o de Produto e respons\xE1vel pela comunica\xE7\xE3o entre a \xE1rea Comercial (neg\xF3cio) e a Opera\xE7\xE3o (Suporte t\xE9cnico e Desenvolvimento). Relacionamento direto com Clientes e gerenciamento de Canais. Cria\xE7\xE3o de material para Intelig\xEAncia de Mercado (an\xE1lise de concorrentes, aporte para prospec\xE7\xE3o).",
-            en: "Full Stack Marketer, including: marketing planning, SEO, PPC, social media, content marketing strategy (Endomarketing), Email Marketing, Analytics, Landing Pages optimisation, Storytelling, among other matters." + "<br>" +
-            "Product Management team's member and responsable for Sales (Business) and Operation (Dev and Customer Success) communication. Client and Partners-close relationship. Creation of Business Inteligence's content (competition analysis, contribution for prospecting)."
+            pt_br: "Marketing Digital da empresa incluindo: planejamento de estratégias para SEO, redes sociais (Facebook, Instagram, Twitter e Linkedin), mídias pagas (AdWords, Facebook Ads e Linkedin Ads), geração de conteúdo para o Blog e material rico (Inbound Marketing), email marketing e cold email (Outbound Marketing), endomarketing, Analytics, otimização de Landing Pages, Storytelling, dentre outros assuntos relacionados. Relacionamento direto com Clientes e gerenciamento de Canais. Criação de material para Inteligência de Mercado (análise de concorrentes, enriquecimento de listas, aporte para prospecção).",
+            en: "Full Stack Marketer, including: marketing planning for SEO and SEM, social media (Facebook, Instagram, Linkedin), PPC (AdWords, Facebook Ads, Linkedin Ads), content marketing strategy for blog posts (Inbound Marketing), email marketing and cold email (Outbound Marketing), endomarketing, Analytics, Landing Pages optimisation, Storytelling, among other related matters. Client and Partners-close relationship. Creation of Business Intelligence content (competition analysis, lists enrichment, contribution for prospecting)."
         },
         workJob2: {
             pt_br: "Analista de Suporte",
@@ -105,14 +119,20 @@ $(function () {
             en: "Tools used:"
         },
         portfolioContent1: {
-            pt_br: "No Projeto Oobj Indicadores transformamos indicadores de todos os departamentos da empresa (Suporte, Desenvolvimento, Integra\xE7\xE3o Cont\xEDnua, Comercial e Financeiro) de bancos de dados especificos em gr\xE1ficos e relat\xF3rios atualizados em tempo real." + "<br>" +
-            "Esse projeto foi desenvolvido em AngularJS.",
-            en: "In Oobj Indicadores Project we turned KPIs from all company departments (Customer Success, Development, Continuous Integration, Sales and Administration) of specific databases into graphs and reports updated in realtime." + "<br>" +
-            "This project was developed in AngularJS."
+            pt_br: "Portal de Gerenciamento e Acompanhamento Centralizado dos Indicadores de vários departamentos de uma empresa, integrando diversos bancos de dados e fontes de informação",
+            en: "KPI Management portal with centralized monitoring of the company’s department, integrating several databases and information sources"
         },
         portfolioContent2: {
-            pt_br: "No Projeto Oobj Parceiros desenvolvemos um portal onde os parceiros, gerentes de conta e financeiro da empresa t\xEAm uma vis\xE3o abrangente sobre os contratos atuais, com estat\xEDsticas, relat\xF3rios e gera\xE7\xE3o de faturas.",
-            en: "In Oobj Parceiros Project we developed a website where partners and company's account and financial managers have a comprehensive view on current contracts, with statistics, reports and invoice generation."
+            pt_br: "Portal de Lançamentos do Cinema, Netflix e HBO Go desenvolvido em React",
+            en: "Cinema, Netflix and HBO Go releases and new additions portal developed using React"
+        },
+        portfolioContent3: {
+            pt_br: "Portal de Controle de Parceiros da Oobj construído em AngularJS",
+            en: "Oobj’s Partners Control portal built in AngularJS"
+        },
+        portfolioContent4: {
+            pt_br: "Portal de Conhecimento da Oobj com mais de 2 milhões de acessos que reúne artigos sobre Documentos Fiscais adaptado de um framework em PHP",
+            en: "Oobj’s Knowledge Base adapted from a PHP framework with over 2 million hits containing articles related to invoices and tax documents"
         },
         portfolioContentButton1: {
             pt_br: "Ver mais",
@@ -131,12 +151,14 @@ $(function () {
             en: "Master's Degree"
         },
         studyTime1: {
-            pt_br: "de Mar\xE7o de 2015 at\xE9 Dezembro de 2015 (1 ano) - TRANCADO",
-            en: "March 2015 - December 2015 (1 year) - Stop out period"
+            pt_br: "de Mar\xE7o de 2017 at\xE9 atualmente",
+            en: "March 2017 - Present"
         },
         studyLevel1Desc: {
-            pt_br: "Linha de pesquisa: Engenharia de software, Banco de dados e Inform\xE1tica e educa\xE7\xE3o.",
-            en: "Research in: Software engineering, Database and Information Technology and Education."
+            pt_br: "Linha de pesquisa: Engenharia de software, Banco de dados e Inform\xE1tica e educa\xE7\xE3o." + "<br>" +
+            "Projeto na área de Web Semântica relacionado a Ontologias e Privacidade em IoT",
+            en: "Field of study: Software engineering, Database and Information Technology and Education." + "<br>" +
+            "Research in: Web Semantics regarding Ontologies and Privacy in IoT (Internet of Things)"
         },
         studyLevel2: {
             pt_br: "Bacharelado",
@@ -145,6 +167,10 @@ $(function () {
         studyTime2: {
             pt_br: "de Mar\xE7o de 2009 at\xE9 Mar\xE7o de 2013 (4 anos)",
             en: "March 2009 - March 2013 (4 years)"
+        },
+        studyLevel2Desc: {
+            pt_br: "Participação no Programa Institucional de Bolsas de Iniciação Científica (PIBIC) pela UFG concedido pelo CNPq de 2011 a 2012. Monitoria da disciplina Programação Orientada a Objetos pela UFG em 2010.",
+            en: "Participation in Institutional Program for Scientific Initiation Scholarships (PIBIC) by UFG in a year (August 2011 - July 2012). Teacher's assistant in Object Oriented Programming by UFG in 2010."
         },
         studyLevel3: {
             pt_br: "Ensino M\xE9dio",
@@ -216,9 +242,9 @@ $(function () {
     var str = _t.g("translate");
 
     // Set language based on the location
-    $.getJSON('http://freegeoip.net/json/', function (result) {
+    $.getJSON('http://api.ipstack.com/check?access_key=8ea9e59326639080022b0cb43cb9d93d', function (result) {
         var country = result.country_code;
-        if (country != 'BR') {
+        if (country !== 'BR') {
             var lang = 'en';
             _t.lang(lang);
 

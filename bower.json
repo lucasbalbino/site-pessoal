@@ -4,7 +4,7 @@
   "authors": [
     "lucasbalbino <lucabmf@outlook.com>"
   ],
-  "license": "MIT",
+  "license": "CC",
   "ignore": [
     "**/.*",
     "node_modules",

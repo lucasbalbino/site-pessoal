@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portifólio de Lucas Balbino">
+    <meta name="description" content="Portfolio of Lucas Balbino">
     <meta name="keywords" content="Lucas Balbino"/>
     <meta name="author" content="Lucas Balbino">
+    <meta name="google-site-verification" content="fLBtvtBrNN65xiMHn6g2b37L8j3GkCVPEGqcFyWs7WI" />
 
     <meta property="og:title" content="Lucas Balbino"/>
     <meta property="og:locale" content="pt_BR"/>
@@ -29,6 +30,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
 
+    <!-- build:css css/vendor.css -->
     <!-- Animation CSS -->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.min.css"/>
     <link rel="stylesheet" href="bower_components/uikit/css/components/slideshow.min.css"/>
@@ -37,13 +39,16 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endbuild -->
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
+    <!-- build:css css/site-pessoal.css -->
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target="#parallax-nav">
@@ -111,26 +116,21 @@
                     <h1 class="brand-heading">Lucas Balbino</h1>
 
                     <p class="intro-summary">
-                        <span id="age"></span> |
+                        <span id="age"></span><span class="trn" data-trn-key="age"></span> |
                         <span class="trn">brasileiro</span> |
                         <span class="trn">solteiro</span>
                     </p>
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-6 col-sm-6">
                         <a href="#summary" class="btn btn-default" data-uk-smooth-scroll="{duration: 2500}">
                             <i class="fa fa-angle-down animated"></i>
-                            <span class="trn">Versão Completa</span>
+                            <span class="trn" data-trn-key="more-info">Mais informações</span>
                         </a>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-6 col-sm-6">
                         <a id="curriculum" class="btn btn-default">
-                            <span class="trn">Currículo em .pdf</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <a class="btn btn-default" disabled>
-                            <span class="trn">Versão Compacta</span>
-                            <i class="fa fa-angle-right animated"></i>
+                            <i class="fa fa-file-text-o animated"></i>
+                            <span class="trn">Currículo</span>
                         </a>
                     </div>
                 </div>
@@ -166,17 +166,26 @@
         <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, animation: 'swipe'}">
             <ul class="uk-slideshow">
                 <li class="uk-overlay uk-overlay-hover">
-                    <img src="portfolio/img/oobj-indicadores-mockup.jpg"/>
+                    <img src="portfolio/img/indicadores-mockup.jpg"/>
 
                     <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
-                        <h2>Oobj Indicadores</h2>
+                        <h2>Indicadores</h2>
 
                         <p class="trn" data-trn-key="portfolioContent1"></p>
-                        <a class="btn btn-default" disabled>
+                        <a class="btn btn-default" href="portfolio/indicadores" target="blank">
                             <span class="trn" data-trn-key="portfolioContentButton1"></span>
                         </a>
-                        <a class="btn btn-default" disabled>
-                            <span class="trn" data-trn-key="portfolioContentButton2"></span>
+                    </div>
+                </li>
+                <li class="uk-overlay uk-overlay-hover">
+                    <img src="portfolio/img/estreias-mockup.jpg"/>
+
+                    <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
+                        <h2>Estreias.com.br</h2>
+
+                        <p class="trn" data-trn-key="portfolioContent2"></p>
+                        <a class="btn btn-default" href="https://estreias.com.br" target="blank">
+                            <span class="trn" data-trn-key="portfolioContentButton1"></span>
                         </a>
                     </div>
                 </li>
@@ -184,14 +193,23 @@
                     <img src="portfolio/img/oobj-parceiros-mockup.jpg"/>
 
                     <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
-                        <h2>Oobj Parceiros</h2>
+                        <h2>Oobj | Parceiros</h2>
 
-                        <p class="trn" data-trn-key="portfolioContent2"></p>
-                        <a class="btn btn-default" disabled>
+                        <p class="trn" data-trn-key="portfolioContent3"></p>
+                        <a class="btn btn-default" href="http://partners.oobj.com.br" target="blank">
                             <span class="trn" data-trn-key="portfolioContentButton1"></span>
                         </a>
-                        <a class="btn btn-default" disabled>
-                            <span class="trn" data-trn-key="portfolioContentButton2"></span>
+                    </div>
+                </li>
+                <li class="uk-overlay uk-overlay-hover">
+                    <img src="portfolio/img/oobj-bc-mockup.jpg"/>
+
+                    <div class="overlay uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-overlay-top">
+                        <h2>Oobj | Base de Conhecimento</h2>
+
+                        <p class="trn" data-trn-key="portfolioContent4"></p>
+                        <a class="btn btn-default" href="https://www.oobj.com.br/bc" target="blank">
+                            <span class="trn" data-trn-key="portfolioContentButton1"></span>
                         </a>
                     </div>
                 </li>
@@ -206,13 +224,19 @@
                 <li data-uk-slideshow-item="1">
                     <a href=""></a>
                 </li>
+                <li data-uk-slideshow-item="2">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="3">
+                    <a href=""></a>
+                </li>
             </ul>
         </div>
-        <div class="portfolio-more">
+        <!--<div class="portfolio-more">
             <a href="#" class="btn btn-default btn-submit">
                 <span class="trn" data-trn-key="all"></span>
             </a>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -231,138 +255,122 @@
 <section id="skill-content" class="container content-section text-center">
     <div class="skills-set">
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                 HTML 5
+                <span class="description">DOMinator</span>
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
             </div>
         </div>
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                 CSS 3
+                <span class="description">Pixel Perfect</span>
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
             </div>
         </div>
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                 Javascript
+                <span class="description">Chrome Consoler</span>
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
             </div>
         </div>
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                 Angular JS
+                <span class="description">Decent Directivist</span>
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
             </div>
         </div>
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                React
+                <span class="description">JSX Enthusiast</span>
+            </div>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                Node JS
+                <span class="description">BackEnd Promise</span>
+            </div>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                SQL
+                <span class="description">DBate Joiner</span>
+            </div>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                 ITIL
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
             </div>
             <div class="col-md-8 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
                 <p><img src="img/ribbon-badge-award.png"><b>EXIN</b> - ITIL Foundation - 2014</p>
             </div>
         </div>
         <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                COBIT
+            <div class="col-md-5 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+                PHP
+                <span class="description">Echo Writer</span>
             </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                BPMN
-            </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                Ionic
-            </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                SQL
-            </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                Java
-            </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="col-md-4 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
-                C
-            </div>
-            <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+            <div class="col-md-3 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
             </div>
         </div>
     </div>
@@ -389,6 +397,32 @@
                     <span class="circle"></span>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
+                    <span class="date" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">2016</span>
+                    <span class="circle"></span>
+
+                    <h1>
+                        Oobj Tecnologia da Informação
+                        <img src="img/oobj.png" alt="Oobj">
+                    </h1>
+
+                    <h2 class="trn" data-trn-key="workJob0"></h2>
+                    <h4><span class="trn" data-trn-key="workJobTime0"></span></h4>
+
+                    <p class="trn" data-trn-key="workContent0"></p>
+
+                    <span class="trn" data-trn-key="tools"></span>
+
+                    <div class="logos">
+                        <img src="img/tools/google-analytics.png">
+                        <img src="img/tools/slack.png">
+                        <img src="img/tools/zapier.png">
+                        <img src="img/tools/zoho.png">
+                        <img src="img/tools/hotjar.png">
+                        <img src="img/tools/typeform.png">
+
+                    </div>
+                </li>
+                <li data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
                     <span class="date" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">2015</span>
                     <span class="circle"></span>
 
@@ -398,27 +432,24 @@
                     </h1>
 
                     <h2 class="trn" data-trn-key="workJob1"></h2>
-                    <h4><span class="trn" data-trn-key="workJobTime1"></span> (<span id="timeline-current"></span>)</h4>
+                    <h4><span class="trn" data-trn-key="workJobTime1"></span></h4>
 
                     <p class="trn" data-trn-key="workContent1"></p>
 
                     <span class="trn" data-trn-key="tools"></span>
 
                     <div class="logos">
-                        <img src="img/tools/google-analytics.png">
                         <img src="img/tools/google-adwords.png">
                         <img src="img/tools/facebook-ads.png">
                         <img src="img/tools/linkedin-ads.png">
                         <img src="img/tools/wrike.png">
                         <img src="img/tools/wordpress.png">
                         <img src="img/tools/rd-station.png">
-                        <img src="img/tools/zapier.png">
                         <img src="img/tools/sendgrid.png">
-                        <img src="img/tools/typeform.png">
                         <img src="img/tools/pipedrive.png">
                         <img src="img/tools/leadfeeder.png">
                         <img src="img/tools/zopim.png">
-                        <img src="img/tools/slack.png">
+                        <img src="img/tools/salesforce.png">
                     </div>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
@@ -525,6 +556,8 @@
                                                                                    data-trn-key="studyCourse"></span>
                     </h2>
                     <h4 class="trn" data-trn-key="studyTime2"></h4>
+
+                    <p class="trn" data-trn-key="studyLevel2Desc"></p>
                 </div>
                 <div class="step-content">
                     <h1>Colégio Órion Vestibulares</h1>
@@ -536,12 +569,12 @@
     <div class="row">
         <div class="languages-set">
             <div class="language">
-                <div class="col-md-4 col-md-offset-2"
+                <div class="col-md-3 col-md-offset-2"
                      data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                     <img src="img/pt_br.png">
                     <span class="trn" data-trn-key="language1"></span>
                 </div>
-                <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <div class="col-md-5 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
                     <span class="level trn" data-trn-key="languageLevel1"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -551,17 +584,17 @@
                 </div>
             </div>
             <div class="language">
-                <div class="col-md-4 col-md-offset-2"
+                <div class="col-md-3 col-md-offset-2"
                      data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                     <img src="img/en.png">
                     <span class="trn" data-trn-key="language2"></span>
                 </div>
-                <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <div class="col-md-5 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
                     <span class="level trn" data-trn-key="languageLevel2"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-empty"></i>
+                    <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
                 <div class="col-md-8 col-md-offset-2" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false}">
@@ -572,12 +605,12 @@
                 </div>
             </div>
             <div class="language">
-                <div class="col-md-4 col-md-offset-2"
+                <div class="col-md-3 col-md-offset-2"
                      data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
                     <img src="img/deaf-sign-language.png">
                     LIBRAS
                 </div>
-                <div class="col-md-4 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+                <div class="col-md-5 text-right" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
                     <span class="level trn" data-trn-key="languageLevel3"></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
@@ -630,14 +663,14 @@
                     <div class="errorForm trn" data-trn-key="errorForm">Há algum erro no formulário.</div>
 
                     <form id="form">
-                        <label for="formName" class="trn" data-trn-key="formField1"></label>
-                        <input type="text" name="formName" id="formName" placeholder="Seu nome aqui"><br>
+                        <label for="formNome" class="trn" data-trn-key="formField1"></label>
+                        <input type="text" name="formNome" id="formNome" placeholder="Seu nome aqui"><br>
 
                         <label for="formEmail" class="trn" data-trn-key="formField2"></label>
                         <input type="email" name="formEmail" id="formEmail" placeholder="Seu email aqui"><br>
 
-                        <label for="formMessage" class="trn" data-trn-key="formField3"></label>
-                        <textarea name="formMessage" id="formMessage" placeholder="Solte suas palavras"></textarea><br>
+                        <label for="formMensagem" class="trn" data-trn-key="formField3"></label>
+                        <textarea name="formMensagem" id="formMensagem" placeholder="Solte suas palavras"></textarea><br>
 
                         <div class="pull-right">
                             <button type="reset" class="btn btn-default trn" data-trn-key="formButton2">Limpar</button>
@@ -662,6 +695,10 @@
     </div>
 </footer>
 
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+</style>
+<!-- build:js js/vendor.js -->
 <!-- jQuery -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -674,10 +711,24 @@
 <script src="bower_components/uikit/js/components/slideshow.min.js"></script>
 <script src="bower_components/moment/min/moment.min.js"></script>
 <script src="bower_components/translate.js/jquery.translate.js"></script>
+<!-- endbuild -->
 
+<!-- build:js js/site-pessoal.js -->
 <!-- Theme JavaScript -->
 <script src="js/main.js"></script>
 <script src="js/translate.js"></script>
+<!-- endbuild -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119174099-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119174099-1');
+</script>
+
 
 </body>
 
