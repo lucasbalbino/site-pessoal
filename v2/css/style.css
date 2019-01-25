@@ -1,0 +1,86 @@
+/* General */
+body {
+    font-family: Sarabun, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    color: #666666;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+#header nav {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    right: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 5;
+}
+
+#header nav ul {
+    display: inline-block;
+}
+
+#header nav ul li {
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    margin: 0 20px;
+}
+
+#header nav ul li.last-left {
+    margin-right: 190px;
+}
+
+#header nav ul li.first-right {
+    margin-left: 190px;
+}
+
+#header nav ul li a img {
+    width: 60px;
+}
+
+#header:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color: #f1f1f1;
+}
+
+#header a {
+    color: #666666;
+    text-decoration: none;
+}
+
+/* Avatar */
+
+#avatar {
+    width: 320px;
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#avatar img {
+    margin: 20px auto;
+}
+
+#avatar a {
+    color: #666666;
+    text-decoration: none;
+}
