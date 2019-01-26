@@ -18,7 +18,7 @@ $(document).ready(function () {
         .click(
             function () {
                 $("#avatar").find("img").css({"width": "200px"});
-                $("#name").css("display", "none");
+                $("#name").slideUp();
                 $("#header").find("nav").css("top", "50px");
                 $(".last-left").css("margin-right", "130px");
                 $(".first-right").css("margin-left", "130px");
@@ -33,6 +33,9 @@ $(document).ready(function () {
                     }
                     $(this).addClass("active");
                 }
+
+                $("#blog").hide();
+                $("#" + $(this).find("span").attr("class").substr(4)).show();
             });
 
     $("#avatar").find("img")
@@ -49,7 +52,7 @@ $(document).ready(function () {
         .click(
             function () {
                 $("#avatar").find("img").css({"width": "100%"});
-                $("#name").css("display", "block");
+                $("#name").slideDown();
                 $("#header").find("nav").css("top", "150px");
                 $(".last-left").css("margin-right", "190px");
                 $(".first-right").css("margin-left", "190px");
@@ -61,6 +64,8 @@ $(document).ready(function () {
                     }
                     active.removeClass("active");
                 }
+
+                $("#blog").hide();
             }
         );
 });
