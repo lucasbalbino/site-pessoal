@@ -35,6 +35,7 @@ $(document).ready(function () {
                 }
 
                 $("#blog").hide();
+                $("#work").hide();
                 $("#" + $(this).find("span").attr("class").substr(4)).show();
             });
 
@@ -66,6 +67,7 @@ $(document).ready(function () {
                 }
 
                 $("#blog").hide();
+                $("#work").hide();
             }
         );
 });
