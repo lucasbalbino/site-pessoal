@@ -19,6 +19,7 @@ $(document).ready(function () {
             function () {
                 $("#avatar").find("img").css({"width": "200px"});
                 $("#name").slideUp();
+                $("#summary").slideUp();
                 $("#header").find("nav").css("top", "50px");
                 $(".last-left").css("margin-right", "130px");
                 $(".first-right").css("margin-left", "130px");
@@ -54,6 +55,7 @@ $(document).ready(function () {
             function () {
                 $("#avatar").find("img").css({"width": "100%"});
                 $("#name").slideDown();
+                $("#summary").slideDown();
                 $("#header").find("nav").css("top", "150px");
                 $(".last-left").css("margin-right", "190px");
                 $(".first-right").css("margin-left", "190px");

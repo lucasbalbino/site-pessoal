@@ -1,4 +1,7 @@
-/* General */
+/* -------------------------------------
+ * General
+ * ------------------------------------- */
+
 * {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -25,7 +28,13 @@ nav ul {
     padding: 0;
 }
 
-/* Header */
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------------
+ * Header
+ * ------------------------------------- */
 
 #header:before {
     position: absolute;
@@ -87,7 +96,9 @@ nav ul {
     width: 70px;
 }
 
-/* Avatar */
+/* -------------------------------------
+ * Avatar
+ * ------------------------------------- */
 
 #avatar {
     width: 320px;
@@ -99,12 +110,8 @@ nav ul {
 }
 
 #avatar a {
-    color: #666666;
-    text-decoration: none;
-}
-
-#avatar a:hover {
     color: #111111;
+    text-decoration: none;
 }
 
 #avatar a img {
@@ -112,7 +119,29 @@ nav ul {
     margin: 5px auto;
 }
 
-/* Footer */
+#avatar #name {
+    margin: 10px 0;
+}
+
+#avatar #summary {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 30px -15vw 60px -15vw;
+    color: #111111;
+}
+
+#avatar #summary i {
+    color: #ccc;
+    font-size: 60px;
+    margin-left: -60px;
+    margin-top: -10px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* -------------------------------------
+ * Footer
+ * ------------------------------------- */
 
 #footer {
     text-align: center;
@@ -137,7 +166,9 @@ nav ul {
     font-size: 24px;
 }
 
-/* Main */
+/* -------------------------------------
+ * Main
+ * ------------------------------------- */
 
 .section {
     position: relative;
@@ -172,10 +203,12 @@ nav ul {
     left: 0;
     right: 0;
     height: 34px;
-    background: url(../img/wave.png) repeat-x left top;
+    background: url(../img/ribbon.png) repeat-x left top;
 }
 
-/* Blog */
+/* -------------------------------------
+ * Blog
+ * ------------------------------------- */
 
 #blog {
     margin-top: 40px;
@@ -186,7 +219,7 @@ nav ul {
 #blog-banner .tab {
     position: absolute;
     top: 70px;
-    left: -8px;
+    left: -15px;
     background: #430d39;
     height: 44px;
     font-size: 20px;
@@ -217,7 +250,7 @@ nav ul {
     font-size: 16px;
     line-height: 24px;
     color: #000;
-    margin: 0 0 60px 0;
+    /*margin: 0 0 60px 0;*/
 }
 
 #blog-banner .upper {
@@ -315,8 +348,9 @@ nav ul {
     text-decoration: none;
 }
 
-
-/* Work */
+/* -------------------------------------
+ * Work
+ * ------------------------------------- */
 
 #work {
     margin-top: 40px;
@@ -329,7 +363,7 @@ nav ul {
     font-size: 16px;
     line-height: 24px;
     color: #000;
-    margin: 0 0 60px 0;
+    /*margin: 0 0 60px 0;*/
 }
 
 
@@ -340,9 +374,18 @@ nav ul {
 
 #work-banner .upper > .left {
     display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    padding: 70px 80px 0 50px;
+    position: relative;
+}
+
+
+
+#work-banner .upper > .right {
+    display: table-cell;
     width: 30%;
     padding: 70px 40px 40px 40px;
-    vertical-align: middle;
     background-color: #8b1e3f;
     font-size: 15px;
     line-height: 24px;
@@ -351,12 +394,127 @@ nav ul {
     text-align: center;
 }
 
+#work-banner .upper > .right h2 {
+    margin: 0 0 60px 0;
+    font-size: 22px;
+    line-height: 23px;
+    color: #b7b7b7;
+    font-weight: 500;
+}
 
 
-#work-banner .upper > .right {
-    display: table-cell;
-    width: 70%;
-    vertical-align: middle;
-    padding: 70px 80px 40px 170px;
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#timeline {
+    list-style: none;
+    padding-left: 38px;
+    border-left: 2px solid #430d39;
+    margin-bottom: 0;
+}
+
+#timeline li {
+    margin: 0 0 80px;
     position: relative;
+    text-align: left;
+}
+
+#timeline li:last-child {
+    margin: 0;
+}
+
+#timeline li h1 {
+    font-size: 22px;
+    margin: 0 0 12px;
+    font-weight: normal;
+    padding-right: 130px;
+    position: relative;
+}
+
+#timeline li h1 img {
+    float: right;
+    max-height: 100px;
+    max-width: 130px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#timeline li h2 {
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+#timeline li h4 {
+    margin: 0 0 25px;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: none;
+}
+
+#timeline li p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+#timeline li .certifications {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    margin-right: -320px;
+    text-align: center;
+    width: 250px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#timeline li .certifications span {
+    display: block;
+}
+
+#timeline li .certifications .cert {
+    margin-bottom: 30px;
+}
+
+#timeline li .certifications .cert .title {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #3c153b;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#timeline li .certifications .cert .title:hover {
+    margin: 0 -70px 5px -70px;
+}
+
+#timeline li .certifications .cert .number {
+    color: #999;
+}
+
+.date {
+    margin-top: -15px;
+    top: 50%;
+    left: -100px;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    color: #430d39;
+}
+
+.circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -45px;
+    width: 10px;
+    height: 10px;
+    background: #8b1e3f;
+    border: 2px solid #430d39;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
 }
