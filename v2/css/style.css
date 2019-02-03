@@ -518,3 +518,308 @@ a {
     display: block;
     position: absolute;
 }
+
+
+
+/* -------------------------------------
+ * Study
+ * ------------------------------------- */
+
+#study {
+    margin-top: 40px;
+    display: none;
+}
+
+#study-banner {
+    position: relative;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    /*margin: 0 0 60px 0;*/
+}
+
+
+
+#study-banner .upper {
+    display: table;
+}
+
+#study-banner .upper > .left {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    padding: 70px 60px 0 35px;
+    position: relative;
+}
+
+#study-banner .upper > .left h3 {
+    color: #666;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+
+
+#study-banner .upper > .right {
+    display: table-cell;
+    width: 30%;
+    padding: 70px 40px 40px 40px;
+    background-color: #8b1e3f;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#study-banner .upper > .right h2 {
+    margin: 0 0 60px 0;
+    font-size: 22px;
+    line-height: 23px;
+    color: #b7b7b7;
+    font-weight: 500;
+}
+
+
+
+/* -------------------------------------
+ * formal-education
+ * ------------------------------------- */
+
+#formal-education {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#formal-education li {
+    margin: 0 80px 80px;
+    position: relative;
+    text-align: left;
+}
+
+#formal-education li h1 {
+    font-size: 22px;
+    margin: 0 0 12px;
+    font-weight: normal;
+    padding-right: 130px;
+    position: relative;
+}
+
+#formal-education li h1 img {
+    max-height: 100px;
+    max-width: 130px;
+    position: absolute;
+    top: 0;
+    left: -120px;
+}
+
+#formal-education li h2 {
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+#formal-education li h4 {
+    margin: 0 0 25px;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: none;
+}
+
+#formal-education li p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+#formal-education li a {
+    color: #8b1e3f;
+    text-decoration: underline;
+}
+
+
+
+/* -------------------------------------
+ * lang
+ * ------------------------------------- */
+
+.lang {
+    margin: 0 0 60px 0;
+}
+
+.lang img {
+    max-width: 60px;
+}
+
+.lang span {
+    display: block;
+    line-height: 2;
+}
+
+.lang .title {
+    font-size: 20px;
+    font-style: normal;
+    margin: 5px 0;
+}
+
+
+
+
+
+/* -------------------------------------
+ * Skills
+ * ------------------------------------- */
+
+
+
+#skills {
+    margin-top: 40px;
+    display: none;
+}
+
+#skills-banner {
+    position: relative;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    /*margin: 0 0 60px 0;*/
+}
+
+
+
+#skills-banner .upper {
+    display: table;
+}
+
+#skills-banner .upper > .left {
+    display: table-cell;
+    width: 30%;
+    padding: 70px 40px 40px 40px;
+    background-color: #8b1e3f;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#skills-banner .upper > .left h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+#skills-banner .upper > .left ul {
+    list-style: none;
+}
+
+
+
+#skills-banner .upper > .right {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    padding: 70px 30px 0 30px;
+    position: relative;
+    text-align: center;
+}
+
+#skills-banner .upper > .right h2 {
+    color: #666;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+
+
+#skills-banner .skill {
+    display: inline-block;
+    text-align: center;
+    width: 28.3%;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+#skills-banner .skill span {
+    display: block;
+}
+
+#skills-banner .skill .icon {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: #3c153b;
+    text-shadow: 10px 10px rgba(183,183,183,0.5);
+}
+
+#skills-banner .skill .title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#skills-banner .skill .subtitle {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+#skills-banner .skill .score {
+    color: #8b1e3f;
+}
+
+
+
+
+
+
+    /* -------------------------------------
+     * Resume
+     * ------------------------------------- */
+
+
+
+#resume {
+    margin-top: 40px;
+    display: none;
+}
+
+#resume .button {
+    text-align: center;
+    margin-top: 100px;
+    overflow: unset;
+}
+
+#resume .button a {
+    background-color: #8b1e3f;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 70px;
+    font-size: 18px;
+    height: 100%;
+    -webkit-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    -moz-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+}
+
+#resume .button a:hover {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px 100px;
+}

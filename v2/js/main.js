@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+    function hideSections() {
+        $("#blog").hide();
+        $("#work").hide();
+        $("#study").hide();
+        $("#skills").hide();
+        $("#resume").hide();
+    }
+
+    function avatarAnimation(direction) {
+        if(direction === "up") {
+            $("#avatar").find("img").css({"width": "200px"});
+            $("#name").slideUp();
+            $("#summary").slideUp();
+            $("#header").find("nav").css("top", "50px");
+            $(".last-left").css("margin-right", "130px");
+            $(".first-right").css("margin-left", "130px");
+        } else if(direction === "down") {
+            $("#avatar").find("img").css({"width": "100%"});
+            $("#name").slideDown();
+            $("#summary").slideDown();
+            $("#header").find("nav").css("top", "150px");
+            $(".last-left").css("margin-right", "190px");
+            $(".first-right").css("margin-left", "190px");
+        }
+    }
+
     $("nav ul li a")
     // Change image on nav on hover
         .hover(
@@ -17,12 +43,7 @@ $(document).ready(function () {
         // Change image on click
         .click(
             function () {
-                $("#avatar").find("img").css({"width": "200px"});
-                $("#name").slideUp();
-                $("#summary").slideUp();
-                $("#header").find("nav").css("top", "50px");
-                $(".last-left").css("margin-right", "130px");
-                $(".first-right").css("margin-left", "130px");
+                avatarAnimation("up");
 
                 if (!$(this).hasClass("active")) {
                     var active = $("nav ul li a.active");
@@ -35,8 +56,7 @@ $(document).ready(function () {
                     $(this).addClass("active");
                 }
 
-                $("#blog").hide();
-                $("#work").hide();
+                hideSections();
                 $("#" + $(this).find("span").attr("class").substr(4)).show();
             });
 
@@ -53,12 +73,7 @@ $(document).ready(function () {
         // Back to homepage when clicked
         .click(
             function () {
-                $("#avatar").find("img").css({"width": "100%"});
-                $("#name").slideDown();
-                $("#summary").slideDown();
-                $("#header").find("nav").css("top", "150px");
-                $(".last-left").css("margin-right", "190px");
-                $(".first-right").css("margin-left", "190px");
+                avatarAnimation("down");
 
                 var active = $("nav ul li a.active");
                 if (active.html()) {
@@ -68,8 +83,7 @@ $(document).ready(function () {
                     active.removeClass("active");
                 }
 
-                $("#blog").hide();
-                $("#work").hide();
+                hideSections();
             }
         );
 });
