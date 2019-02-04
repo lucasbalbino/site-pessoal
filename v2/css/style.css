@@ -3,6 +3,7 @@
  * ------------------------------------- */
 
 * {
+    font-family: Sarabun, Arial, sans-serif;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -10,7 +11,6 @@
 }
 
 body {
-    font-family: Sarabun, Arial, sans-serif;
     font-size: 16px;
     line-height: 32px;
     color: #666666;
@@ -787,10 +787,304 @@ a {
 
 
 
+/* -------------------------------------
+ * Portfolio
+ * ------------------------------------- */
 
-    /* -------------------------------------
-     * Resume
-     * ------------------------------------- */
+
+
+#portfolio {
+    margin-top: 40px;
+    display: none;
+}
+
+#portfolio-banner .tab {
+    position: absolute;
+    top: 70px;
+    right: -15px;
+    background: #430d39;
+    height: 44px;
+    font-size: 20px;
+    line-height: 44px;
+    padding: 0 30px;
+    color: #fff;
+    z-index: 100;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#portfolio-banner .tab:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -23px;
+    height: 44px;
+    width: 23px;
+    background: url(../img/arrow.png) no-repeat;
+    transform: rotate(180deg);
+}
+
+
+
+
+#portfolio-banner {
+    position: relative;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    /*margin: 0 0 60px 0;*/
+}
+
+#portfolio-banner .upper {
+    display: table;
+}
+
+#portfolio-banner .upper > .left {
+    display: table-cell;
+    width: 20%;
+    padding: 70px 40px 40px 40px;
+    vertical-align: middle;
+    background-color: #8b1e3f;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+}
+
+#portfolio-banner .upper > .left h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+#portfolio-banner .upper > .left a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#portfolio-banner .upper > .left a i {
+    display: block;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+#portfolio-banner .upper > .right {
+    display: table-cell;
+    width: 80%;
+    vertical-align: middle;
+    padding: 120px 170px 40px 100px;
+    position: relative;
+}
+
+#portfolio-banner .upper .content {
+    padding: 0 20px 0 0;
+    position: relative;
+}
+
+#portfolio-banner .upper h1 {
+    margin: 0;
+    font-size: 46px;
+    line-height: 50px;
+    color: #232323;
+}
+
+#portfolio-banner .upper h2 {
+    margin: 0 0 60px 0;
+    font-size: 22px;
+    line-height: 23px;
+    color: #b7b7b7;
+    font-weight: 500;
+}
+
+#portfolio-banner .upper .content a img {
+    width: 100%;
+    margin: 20px 0;
+    -webkit-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    -moz-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+}
+
+#portfolio-banner .right .more {
+    margin-top: 10px;
+    background-color: #3c153b;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#portfolio-banner .right .more:hover {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 110px;
+}
+
+#portfolio-banner .right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* -------------------------------------
+ * Contact
+ * ------------------------------------- */
+
+
+
+#contact {
+    margin-top: 40px;
+    display: none;
+}
+
+#contact-banner {
+    position: relative;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    /*margin: 0 0 60px 0;*/
+}
+
+
+
+#contact-banner .upper {
+    display: table;
+}
+
+#contact-banner .upper > .left {
+    display: table-cell;
+    width: 0%;
+    padding: 70px 40px 40px 40px;
+    background-color: #8b1e3f;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+#contact-banner .upper > .right {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    padding: 40px 100px 0 100px;
+    position: relative;
+}
+
+
+
+
+.contact-form {
+    margin: 50px 0 150px 0;
+}
+
+.contact-form p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.contact-form .email a {
+    font-size: 24px;
+    color: #3c153b;
+    font-weight: bold;
+}
+
+.contact-form .email a i{
+    margin-right: 10px;
+}
+
+.contact-form #form label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.contact-form #form input {
+    width: 100%;
+    color: #111111;
+    margin-bottom: 20px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #3c153b;
+    -webkit-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    -moz-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+}
+
+.contact-form #form textarea {
+    width: 100%;
+    max-width: 100%;
+    color: #111111;
+    margin-bottom: 20px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #3c153b;
+    -webkit-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    -moz-box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+    box-shadow: 10px 10px 0 0 rgba(183,183,183,0.5);
+}
+
+.contact-form #form .submit {
+    float: right;
+}
+
+.contact-form #form .submit button {
+    cursor: pointer;
+    background-color: #8b1e3f;
+    color: #fff;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.contact-form #form .submit button:hover {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 50px;
+}
+
+.successForm, .errorForm {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    margin: 20px 0;
+    display: none;
+}
+
+.successForm {
+    background-color: #8b1e3f;
+}
+
+.errorForm {
+    background-color: #c0392b;
+}
+
+
+
+
+
+/* -------------------------------------
+ * Resume
+ * ------------------------------------- */
 
 
 

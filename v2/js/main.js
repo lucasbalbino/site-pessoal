@@ -5,6 +5,8 @@ $(document).ready(function () {
         $("#work").hide();
         $("#study").hide();
         $("#skills").hide();
+        $("#portfolio").hide();
+        $("#contact").hide();
         $("#resume").hide();
     }
 
