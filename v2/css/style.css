@@ -106,7 +106,7 @@ a {
     position: relative;
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #avatar a {
@@ -120,13 +120,13 @@ a {
 }
 
 #avatar #name {
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 #avatar #summary {
     font-size: 16px;
     line-height: 1.7;
-    margin: 30px -15vw 60px -15vw;
+    margin: 40px -15vw 80px -15vw;
     color: #111111;
 }
 
@@ -137,6 +137,26 @@ a {
     margin-top: -10px;
     position: absolute;
     z-index: -1;
+}
+
+.lang-selector {
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 32px;
+}
+
+.lang-selector-label {
+    display: none;
+    position: absolute;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #111111;
+    top: 33px;
+    right: 73px;
+    background: #f1f1f1;
+    padding: 0 10px;
 }
 
 /* -------------------------------------

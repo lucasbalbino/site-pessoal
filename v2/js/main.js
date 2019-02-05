@@ -11,16 +11,20 @@ $(document).ready(function () {
     }
 
     function avatarAnimation(direction) {
-        if(direction === "up") {
-            $("#avatar").find("img").css({"width": "200px"});
-            $("#name").slideUp();
+        if (direction === "up") {
+            $("#profile").css({"width": "200px"});
+            $("#name").css({"font-size": "16px", "margin": "-5px 0", "color": "#666"});
+            $(".lang-selector").css({"right": "65px", "width": "25px"});
+            $(".lang-selector-label").css({"top": "31px", "right": "95px"});
             $("#summary").slideUp();
             $("#header").find("nav").css("top", "50px");
             $(".last-left").css("margin-right", "130px");
             $(".first-right").css("margin-left", "130px");
-        } else if(direction === "down") {
-            $("#avatar").find("img").css({"width": "100%"});
-            $("#name").slideDown();
+        } else if (direction === "down") {
+            $("#profile").css({"width": "100%"});
+            $("#name").css({"font-size": "32px", "margin": "30px 0", "color": "#111"});
+            $(".lang-selector").css({"right": "35px", "width": "32px"});
+            $(".lang-selector-label").css({"top": "33px", "right": "73px"});
             $("#summary").slideDown();
             $("#header").find("nav").css("top", "150px");
             $(".last-left").css("margin-right", "190px");
@@ -62,30 +66,46 @@ $(document).ready(function () {
                 $("#" + $(this).find("span").attr("class").substr(4)).show();
             });
 
-    $("#avatar").find("img")
     // Change avatar image on hover
+    $("#avatar")
         .hover(
             function () {
-                $(this).attr("src", "img/real-" + $(this).attr("src").substr(4));
+                $(this).find("#profile").attr("src", "img/real-" + $(this).find("#profile").attr("src").substr(4));
             },
             function () {
-                $(this).attr("src", "img/" + $(this).attr("src").substr(9));
+                $(this).find("#profile").attr("src", "img/" + $(this).find("#profile").attr("src").substr(9));
             }
         )
-        // Back to homepage when clicked
-        .click(
-            function () {
-                avatarAnimation("down");
+        .find("a").click(
+        function () {
+            avatarAnimation("down");
 
-                var active = $("nav ul li a.active");
-                if (active.html()) {
-                    if (active.find("img").attr("src").indexOf("hover") !== -1) {
-                        active.find("img").attr("src", "img/" + active.find("img").attr("src").substr(10));
-                    }
-                    active.removeClass("active");
+            var active = $("nav ul li a.active");
+            if (active.html()) {
+                if (active.find("img").attr("src").indexOf("hover") !== -1) {
+                    active.find("img").attr("src", "img/" + active.find("img").attr("src").substr(10));
                 }
-
-                hideSections();
+                active.removeClass("active");
             }
-        );
+
+            hideSections();
+        }
+    );
+
+    // Set the curriculum's correct link
+    $('#curriculum').click(function (e) {
+        var lang = $(".lang-selector").attr("data-value");
+        var newLang = languages[(languages.indexOf(lang) + 1) % languages.length];
+        if (newLang === "pt_br") {
+            $(this).attr({
+                target: 'blank',
+                href: 'https://bit.ly/LucasBalbinoCurriculo'
+            });
+        } else {
+            $(this).attr({
+                target: 'blank',
+                href: 'https://bit.ly/LucasBalbinoResume'
+            });
+        }
+    });
 });

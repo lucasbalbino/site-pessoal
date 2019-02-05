@@ -43,8 +43,10 @@
     <header id="header">
         <div>
             <div id="avatar">
+                <img class="lang-selector" src="img/en.png">
+                <span class="lang-selector-label trn">Change to English</span>
                 <a href="#">
-                    <img src="img/avatar.png" alt="">
+                    <img id="profile" src="img/avatar.png" alt="">
                     <div id="name">Lucas Balbino</div>
                 </a>
                 <div id="summary">
@@ -182,6 +184,21 @@
                                 <br>
                             </li>
                             <li>
+                                <span class="date">2017</span>
+                                <span class="circle"></span>
+
+                                <h1>
+                                    Oobj Tecnologia da Informação
+                                    <img src="img/oobj.png" alt="Oobj">
+                                </h1>
+                                <h2 class="trn" data-trn-key="workJob0"></h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="workJobTime0"></span>
+                                </h4>
+                                <p class="trn" data-trn-key="workContent0"></p>
+                                <p class="certifications"></p>
+                            </li>
+                            <li>
                                 <span class="date">2016</span>
                                 <span class="circle"></span>
 
@@ -189,20 +206,11 @@
                                     Oobj Tecnologia da Informação
                                     <img src="img/oobj.png" alt="Oobj">
                                 </h1>
-                                <h2 class="trn" data-trn-key="workJob0">Product Manager</h2>
+                                <h2 class="trn" data-trn-key="workJob1"></h2>
                                 <h4>
-                                    <span class="trn" data-trn-key="workJobTime0">January 2017 - Present</span>
+                                    <span class="trn" data-trn-key="workJobTime1"></span>
                                 </h4>
-                                <p class="trn" data-trn-key="workContent0">
-                                    Responsible for the company’s Product Management and for Sales (Business) and
-                                    Operation (Dev and Customer Success)
-                                    communication. Roadmap and Portfolio’s monitoring and management.<br>Interface
-                                    prototype creation (focused on UI / UX), requirements analysis, flows drawing of
-                                    existing solutions and new features. Integration and adaptation of partners'
-                                    products to the company portfolio. Application of Growth strategies and tools to
-                                    help boost products. Communication about the evolution of products. Documentation
-                                    and training to the team about the products.
-                                </p>
+                                <p class="trn" data-trn-key="workContent1"></p>
                                 <p class="certifications">
                                 <span class="cert">
                                     <a target="blank"
@@ -210,9 +218,55 @@
                                         <span class="title">Inbound Certification</span>
                                     </a>
                                     <span>Hubspot Academy</span>
-                                    <span>October 2018 - November 2020</span>
+                                    <span data-trn-key="certificationTime0">October 2018 - November 2020</span>
                                     <span class="number">1231-123123-1232</span>
                                 </span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="date">2015</span>
+                                <span class="circle"></span>
+                                <br>
+                            </li>
+                            <li>
+                                <span class="date">2014</span>
+                                <span class="circle"></span>
+
+                                <h1>
+                                    Oobj Tecnologia da Informação
+                                    <img src="img/oobj.png" alt="Oobj">
+                                </h1>
+                                <h2 class="trn" data-trn-key="workJob2"></h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="workJobTime2"></span>
+                                </h4>
+                                <p class="trn" data-trn-key="workContent2"></p>
+                                <p class="certifications">
+                                <span class="cert">
+                                    <a target="blank"
+                                       href="https://lucasbalbino.com/certifications/ITIL-Foundation.pdf">
+                                        <span class="title">ITIL Foundation</span>
+                                    </a>
+                                    <span>EXIN</span>
+                                    <span data-trn-key="certificationTime0">October 2018 - November 2020</span>
+                                    <span class="number">1231-123123-1232</span>
+                                </span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="date">2013</span>
+                                <span class="circle"></span>
+
+                                <h1>
+                                    Centro de Informação, Documentação e Arquivo (CIDARQ)
+                                    <img src="img/cidarq.png" alt="CIDARQ">
+                                </h1>
+                                <h2 class="trn" data-trn-key="workJob3"></h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="workJobTime3"></span>
+                                </h4>
+                                <p class="trn" data-trn-key="workContent3"></p>
+                                <p class="certifications">
                                 </p>
                             </li>
 
@@ -618,8 +672,27 @@
     </div>
 </footer>
 
-<!-- Scripts -->
+<!-- Vendor Scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../bower_components/translate.js/jquery.translate.js"></script>
+
+<!-- Personal Scripts -->
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/translate.js"></script>
+
+
+<!-- Tags -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119174099-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119174099-1');
+</script>
+
 </body>
 </html>
