@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var languages = ['pt_br', 'en'];
 
     function hideSections() {
         $("#blog").hide();
@@ -26,10 +27,26 @@ $(document).ready(function () {
             $(".lang-selector").css({"right": "35px", "width": "32px"});
             $(".lang-selector-label").css({"top": "33px", "right": "73px"});
             $("#summary").slideDown();
-            $("#header").find("nav").css("top", "150px");
-            $(".last-left").css("margin-right", "190px");
-            $(".first-right").css("margin-left", "190px");
+            // if ($(window).width() > 1085) {
+                $("#header").find("nav").css("top", "150px");
+            // } else {
+            //     $("#header").find("nav").css("top", "430px");
+            // }
+            // if ($(window).width() > 1336) {
+                $(".last-left").css("margin-right", "190px");
+                $(".first-right").css("margin-left", "190px");
+            // } else if ($(window).width() > 1085) {
+            //     $(".last-left").css("margin-right", "160px");
+            //     $(".first-right").css("margin-left", "160px");
+            // } else {
+            //     $(".last-left").css("margin-right", "10px");
+            //     $(".first-right").css("margin-left", "10px");
+            // }
         }
+    }
+
+    function removeStyle() {
+
     }
 
     $("nav ul li a")
@@ -49,7 +66,13 @@ $(document).ready(function () {
         // Change image on click
         .click(
             function () {
-                avatarAnimation("up");
+                var avatar = $("#avatar");
+                if(avatar.hasClass("active")) {
+                    avatar.removeClass("active");
+                    avatarAnimation("up");
+                } else {
+                    
+                }
 
                 if (!$(this).hasClass("active")) {
                     var active = $("nav ul li a.active");
@@ -63,7 +86,7 @@ $(document).ready(function () {
                 }
 
                 hideSections();
-                $("#" + $(this).find("span").attr("class").substr(4)).show();
+                $("#" + $(this).find("span").attr("class").split(" ")[0].substr(4)).show();
             });
 
     // Change avatar image on hover
@@ -78,7 +101,11 @@ $(document).ready(function () {
         )
         .find("a").click(
         function () {
-            avatarAnimation("down");
+            var avatar = $("#avatar");
+            if(!avatar.hasClass("active")) {
+                avatar.addClass("active");
+                avatarAnimation("down");
+            }
 
             var active = $("nav ul li a.active");
             if (active.html()) {

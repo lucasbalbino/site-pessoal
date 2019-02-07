@@ -42,8 +42,8 @@
 <div class="main">
     <header id="header">
         <div>
-            <div id="avatar">
-                <img class="lang-selector" src="img/en.png">
+            <div id="avatar" class="active">
+                <img class="lang-selector" src="img/en.png" data-value="en">
                 <span class="lang-selector-label trn">Change to English</span>
                 <a href="#">
                     <img id="profile" src="img/avatar.png" alt="">
@@ -51,12 +51,7 @@
                 </a>
                 <div id="summary">
                     <i class="fas fa-quote-left"></i>
-                    IT Professional specialized on <strong>Product Ownership</strong> with a <strong>creative</strong>
-                    spirit and <strong>innovative</strong> behavior. I can list as strengths an impeccable <strong>interpersonal
-                    relationship</strong>, fast <strong>learning skills</strong> and thirst of
-                    <strong>knowledge</strong>. With over <strong>5 years</strong> of work experience, I keep evolving
-                    and learning new ways of integrating <strong>Technology</strong> to several areas: <strong>Development</strong>,
-                    <strong>Marketing</strong>, <strong>Sales</strong> and <strong>Customer Success</strong>.
+                    <span class="trn" data-trn-key="summary"></span>
                 </div>
             </div>
             <nav>
@@ -71,42 +66,42 @@
                         <a href="#">
                             <img src="img/002-briefcase.svg"
                                  alt="">
-                            <span class="nav-work">Work</span>
+                            <span class="nav-work trn">Trabalho</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/003-book.svg"
                                  alt="">
-                            <span class="nav-study">Study</span>
+                            <span class="nav-study trn" data-trn-key="study">Estudo</span>
                         </a>
                     </li>
                     <li class="last-left">
                         <a href="#">
                             <img src="img/000-resume.svg"
                                  alt="">
-                            <span class="nav-resume">Résumé</span>
+                            <span class="nav-resume trn">Currículo</span>
                         </a>
                     </li>
                     <li class="first-right">
                         <a href="#">
                             <img src="img/004-brain.svg"
                                  alt="">
-                            <span class="nav-skills">Skills</span>
+                            <span class="nav-skills trn" data-trn-key="skills">Competências</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/005-layers.svg"
                                  alt="">
-                            <span class="nav-portfolio">Portfolio</span>
+                            <span class="nav-portfolio trn" data-trn-key="portfolio">Portifólio</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/006-chat.svg"
                                  alt="">
-                            <span class="nav-contact">Contact</span>
+                            <span class="nav-contact trn">Contato</span>
                         </a>
                     </li>
                 </ul>
@@ -146,7 +141,7 @@
                     </div>
                     <div class="right">
                         <h2>See more articles</h2>
-                        <h4>Pitch Perfect</h4>
+                        <h4>Pixel Perfect</h4>
                         <p>“cras tristique hac curae torquent id. urna netus lobortis
                             curabitur nibh sollicitudin curabitur non sapien fringilla, mauris semper lobortis nec
                             porta hendrerit vestibulum metus eu
@@ -156,7 +151,7 @@
                                 Read more
                             </p>
                         </a>
-                        <h4>Pitch Perfect</h4>
+                        <h4>Pixel Perfect</h4>
                         <p>“cras tristique hac curae torquent id. urna netus lobortis
                             curabitur nibh sollicitudin curabitur non sapien fringilla, mauris semper lobortis nec
                             porta hendrerit vestibulum metus eu
@@ -212,21 +207,58 @@
                                 </h4>
                                 <p class="trn" data-trn-key="workContent1"></p>
                                 <p class="certifications">
-                                <span class="cert">
-                                    <a target="blank"
-                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/24-4259190-1540385539523.png">
-                                        <span class="title">Inbound Certification</span>
-                                    </a>
-                                    <span>Hubspot Academy</span>
-                                    <span data-trn-key="certificationTime0">October 2018 - November 2020</span>
-                                    <span class="number">1231-123123-1232</span>
-                                </span>
+                                    <span class="trn subtitle">Certificações</span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/24-4259190-1540385539523.png">
+                                            <span class="title">Inbound Certification</span>
+                                        </a>
+                                        <span>Hubspot Academy</span>
+                                        <span class="trn" data-trn-key="certificationTime1"></span>
+                                        <span class="number">24-4259190-1540385539709</span>
+                                    </span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/23-4259190-1546945084062.png">
+                                            <span class="title">Inbound Marketing Certification</span>
+                                        </a>
+                                        <span>Hubspot Academy</span>
+                                        <span class="trn" data-trn-key="certificationTime2"></span>
+                                        <span class="number">23-4259190-1546945084223</span>
+                                    </span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/15-4259190-1547321967795.png">
+                                            <span class="title">Content Marketing Certification</span>
+                                        </a>
+                                        <span>Hubspot Academy</span>
+                                        <span class="trn" data-trn-key="certificationTime2"></span>
+                                        <span class="number">15-4259190-1547321967995</span>
+                                    </span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/11-4259190-1547337537063.png">
+                                            <span class="title">Email Marketing Certification</span>
+                                        </a>
+                                        <span>Hubspot Academy</span>
+                                        <span class="trn" data-trn-key="certificationTime2"></span>
+                                        <span class="number">11-4259190-1547337537250</span>
+                                    </span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/29-4259190-1547411028570.png">
+                                            <span class="title">Social Media Certification</span>
+                                        </a>
+                                        <span>Hubspot Academy</span>
+                                        <span class="trn" data-trn-key="certificationTime2"></span>
+                                        <span class="number">29-4259190-1547411029103</span>
+                                    </span>
                                 </p>
                             </li>
                             <li>
                                 <span class="date">2015</span>
                                 <span class="circle"></span>
-                                <br>
+                                <br><br>
                             </li>
                             <li>
                                 <span class="date">2014</span>
@@ -242,15 +274,16 @@
                                 </h4>
                                 <p class="trn" data-trn-key="workContent2"></p>
                                 <p class="certifications">
-                                <span class="cert">
-                                    <a target="blank"
-                                       href="https://lucasbalbino.com/certifications/ITIL-Foundation.pdf">
-                                        <span class="title">ITIL Foundation</span>
-                                    </a>
-                                    <span>EXIN</span>
-                                    <span data-trn-key="certificationTime0">October 2018 - November 2020</span>
-                                    <span class="number">1231-123123-1232</span>
-                                </span>
+                                    <span class="trn subtitle">Certificações</span>
+                                    <span class="cert">
+                                        <a target="blank"
+                                           href="https://lucasbalbino.com/certifications/ITIL-Foundation.pdf">
+                                            <span class="title">ITIL Foundation</span>
+                                        </a>
+                                        <span>EXIN</span>
+                                        <span class="trn" data-trn-key="certificationTime3"></span>
+                                        <span class="number">5077217.20286573</span>
+                                    </span>
                                 </p>
                             </li>
                             <li>
@@ -278,7 +311,7 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <h2>Certifications</h2>
+                        <h2 class="trn">Certificações</h2>
                     </div>
                 </div>
             </div>
@@ -290,30 +323,140 @@
             <div id="study-banner" class="ribbon">
                 <div class="upper clearfix">
                     <div class="left">
-                        <h3>
-                            Formal Education
-                        </h3>
-                        <ul id="formal-education">
+                        <h3 class="trn" data-trn-key="education"></h3>
+                        <ul class="education">
                             <li>
                                 <h1>
                                     <img src="img/ufg.png" alt="UFG">
                                     Universidade Federal de Goiás
                                 </h1>
-                                <h2 class="trn" data-trn-key="workJob0">Master's Degree in Computer Science</h2>
+                                <h2>
+                                    <span class="trn" data-trn-key="studyLevel1"></span>
+                                    <span class="trn" data-trn-key="studyCourse"></span>
+                                </h2>
                                 <h4>
-                                    <span class="trn" data-trn-key="workJobTime0">March 2017 - July 2018 (Stop out period)</span>
+                                    <span class="trn" data-trn-key="studyTime1"></span>
                                 </h4>
-                                <p class="trn" data-trn-key="workContent0">
-                                    Field of study: Software engineering, Database and Information Technology and
-                                    Education.<br>
-                                    Research in: Web Semantics regarding Ontologies and Privacy in IoT (Internet of
-                                    Things)<br>
-                                    <br>
-                                    Published article:<br>
-                                    A Lightweight Mobile Service for Context Representation through an IoT-oriented
-                                    Ontology<br>
-                                    <a target="blank" href="https://dl.acm.org/citation.cfm?id=3243086">
-                                        https://dl.acm.org/citation.cfm?id=3243086
+                                <p class="trn" data-trn-key="studyLevel1Desc">
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/ufg.png" alt="UFG">
+                                    Universidade Federal de Goiás
+                                </h1>
+                                <h2>
+                                    <span class="trn" data-trn-key="studyLevel2"></span>
+                                    <span class="trn" data-trn-key="studyCourse"></span>
+                                </h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="studyTime2"></span>
+                                </h4>
+                                <p class="trn" data-trn-key="studyLevel2Desc">
+                                </p>
+                            </li>
+                        </ul>
+                        <h3 class="trn">Certificações</h3>
+                        <ul class="education">
+                            <li>
+                                <h1>
+                                    <img src="img/hubspot.png" alt="Hubspot">
+                                    Hubspot Academy
+                                </h1>
+                                <h2>Inbound Certification</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime1"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 24-4259190-1540385539709<br>
+                                    <a target="blank"
+                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/24-4259190-1540385539523.png">
+                                        <span class="trn" data-trn-key="certificate"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/hubspot.png" alt="Hubspot">
+                                    Hubspot Academy
+                                </h1>
+                                <h2>Inbound Marketing Certification</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime2"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 23-4259190-1546945084223<br>
+                                    <a target="blank"
+                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/23-4259190-1546945084062.png">
+                                        <span class="trn" data-trn-key="certificate"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/hubspot.png" alt="Hubspot">
+                                    Hubspot Academy
+                                </h1>
+                                <h2>Content Marketing Certification</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime2"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 15-4259190-1547321967995<br>
+                                    <a target="blank"
+                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/15-4259190-1547321967795.png">
+                                        <span class="trn" data-trn-key="certificate"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/hubspot.png" alt="Hubspot">
+                                    Hubspot Academy
+                                </h1>
+                                <h2>Email Marketing Certification</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime2"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 11-4259190-1547337537250<br>
+                                    <a target="blank"
+                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/11-4259190-1547337537063.png">
+                                        <span class="trn" data-trn-key="certificate"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/hubspot.png" alt="Hubspot">
+                                    Hubspot Academy
+                                </h1>
+                                <h2>Social Media Certification</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime2"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 29-4259190-1547411029103<br>
+                                    <a target="blank"
+                                       href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/29-4259190-1547411028570.png">
+                                        <span class="trn" data-trn-key="certificate"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <h1>
+                                    <img src="img/exin.png" alt="EXIN">
+                                    EXIN
+                                </h1>
+                                <h2>ITIL Foundation</h2>
+                                <h4>
+                                    <span class="trn" data-trn-key="certificationTime3"></span>
+                                </h4>
+                                <p>
+                                    <span class="trn" data-trn-key="credential"></span>: 5077217.20286573<br>
+                                    <a target="blank"
+                                       href="https://lucasbalbino.com/certifications/ITIL-Foundation.pdf">
+                                        <span class="trn" data-trn-key="certificate"></span>
                                     </a>
                                 </p>
                             </li>
@@ -324,8 +467,8 @@
 
                         <div class="lang">
                             <img src="img/brazil.svg">
-                            <span class="title">Brazilian Portuguese</span>
-                            <span>Native proficiency</span>
+                            <span class="title trn" data-trn-key="language1"></span>
+                            <span class="trn" data-trn-key="languageLevel1"></span>
                             <span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -337,8 +480,8 @@
 
                         <div class="lang">
                             <img src="img/english-language.svg">
-                            <span class="title">English</span>
-                            <span>Full professional proficiency</span>
+                            <span class="title trn" data-trn-key="language2"></span>
+                            <span class="trn" data-trn-key="languageLevel2"></span>
                             <span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -351,7 +494,7 @@
                         <div class="lang">
                             <img src="img/sign-language.svg">
                             <span class="title">LIBRAS</span>
-                            <span>Elementary proficiency</span>
+                            <span class="trn" data-trn-key="languageLevel3"></span>
                             <span>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
@@ -371,7 +514,7 @@
             <div id="skills-banner" class="ribbon">
                 <div class="upper clearfix">
                     <div class="left">
-                        <h3>Experience with these tools</h3>
+                        <h3 class="trn" data-trn-key="tools"></h3>
                         <ul>
                             <li>Bizagi</li>
                             <li>Facebook Ads</li>
@@ -398,7 +541,7 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <h2>Technical Skills</h2>
+                        <h2 class="trn" data-trn-key="technicalSkills"></h2>
 
                         <div class="skill">
                             <i class="fab fa-html5 icon"></i>
@@ -519,7 +662,7 @@
             <div id="portfolio-banner" class="ribbon">
                 <div class="upper clearfix">
                     <div class="left">
-                        <h3>See all my technical portfolio on</h3>
+                        <h3 class="trn" data-trn-key="seePortfolio"></h3>
 
                         <p>
                             <a target="blank" href="https://www.github.com/lucasbalbino">
@@ -528,26 +671,59 @@
                         </p>
                     </div>
                     <div class="right">
-                        <div class="tab"><i class="fab fa-angular icon"></i> Angular</div>
-                        <div class="tab"><i class="fab fa-angular icon"></i> Angular</div>
-                        <div class="content">
-                            <h1>Indicadores</h1>
-                            <p>
-                                <a href="#">
-                                    <img src="../portfolio/img/indicadores-mockup.jpg"
-                                         alt="">
-                                </a>
-                            </p>
-                            <p>
-                                KPI Management portal with centralized monitoring of the company’s department,
-                                integrating several databases and information sources
-
-                            </p>
-                            <a href="#">
-                                <p class="more">
-                                    See more
+                        <div class="project">
+                            <div class="tab"><i class="fab fa-angular"></i> Angular</div>
+                            <div class="content">
+                                <h1>Indicadores</h1>
+                                <p>
+                                    <a target="blank" href="https://lucasbalbino.com/portfolio/indicadores">
+                                        <img src="../portfolio/img/indicadores-mockup.jpg"
+                                             alt="">
+                                    </a>
                                 </p>
-                            </a>
+                                <p class="trn" data-trn-key="portfolioContent1">
+                                </p>
+                                <a target="blank" href="https://lucasbalbino.com/portfolio/indicadores">
+                                    <p class="more trn" data-trn-key="portfolioContentButton1">
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="tab"><i class="fab fa-angular"></i> Angular</div>
+                            <div class="content">
+                                <h1>Oobj | Parceiros</h1>
+                                <p>
+                                    <a target="blank" href="http://parceiros.oobj.com.br/">
+                                        <img src="../portfolio/img/oobj-parceiros-mockup.jpg"
+                                             alt="">
+                                    </a>
+                                </p>
+                                <p class="trn" data-trn-key="portfolioContent2">
+                                </p>
+                                <a target="blank" href="http://parceiros.oobj.com.br/">
+                                    <p class="more trn" data-trn-key="portfolioContentButton1">
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="tab"><i class="fab fa-php"></i> PHP</div>
+                            <div class="content">
+                                <h1>Oobj | Base de Conhecimento</h1>
+                                <p>
+                                    <a target="blank" href="https://www.oobj.com.br/bc/">
+                                        <img src="../portfolio/img/oobj-bc-mockup.jpg"
+                                             alt="">
+                                    </a>
+                                </p>
+                                <p class="trn" data-trn-key="portfolioContent3">
+                                </p>
+                                <a target="blank" href="https://www.oobj.com.br/bc/">
+                                    <p class="more trn" data-trn-key="portfolioContentButton1">
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -563,7 +739,7 @@
                     </div>
                     <div class="right">
                         <div class="contact-form">
-                            <p>Envie um email para:</p>
+                            <p class="trn" data-trn-key="sendEmail"></p>
 
                             <p class="email">
                                 <a href="mailto:hi@lucasbalbino.com">
@@ -571,12 +747,12 @@
                                 </a>
                             </p>
 
-                            <p class="trn" data-trn-key="fillForm">ou preencha o formulário:</p>
+                            <p class="trn" data-trn-key="fillForm"></p>
 
                             <div class="successForm trn" data-trn-key="successForm">Mensagem enviada com sucesso!</div>
                             <div class="errorForm trn" data-trn-key="errorForm">Há algum erro no formulário.</div>
 
-                            <form id="form">
+                            <form id="form" action="https://formspree.io/hi@lucasbalbino.com" method="POST">
                                 <label for="formNome" class="trn" data-trn-key="formField1">Nome</label>
                                 <input type="text" name="formNome" id="formNome" placeholder="Seu nome aqui"><br>
 
@@ -603,8 +779,8 @@
 
     <section id="resume" class="section">
         <div class="button">
-            <a target="blank" href="https://bit.ly/LucasBalbinoResume">
-                <span class="trn" data-trn-key="Currículo">Résumé</span>
+            <a id="curriculum" target="blank">
+                <span class="trn">Currículo</span>
             </a>
         </div>
     </section>
@@ -673,8 +849,8 @@
 </footer>
 
 <!-- Vendor Scripts -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="../bower_components/translate.js/jquery.translate.js"></script>
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../bower_components/translate.js/jquery.translate.js"></script>
 
 <!-- Personal Scripts -->
 <script type="text/javascript" src="js/main.js"></script>
