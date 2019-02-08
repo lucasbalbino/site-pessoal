@@ -11,40 +11,6 @@ $(document).ready(function () {
         $("#resume").hide();
     }
 
-    function avatarAnimation(direction) {
-        if (direction === "up") {
-            $("#profile").css({"width": "200px"});
-            $("#name").css({"font-size": "16px", "margin": "-5px 0", "color": "#666"});
-            $(".lang-selector").css({"right": "65px", "width": "25px"});
-            $(".lang-selector-label").css({"top": "31px", "right": "95px"});
-            $("#summary").slideUp();
-            $("#header").find("nav").css("top", "50px");
-            $(".last-left").css("margin-right", "130px");
-            $(".first-right").css("margin-left", "130px");
-        } else if (direction === "down") {
-            $("#profile").css({"width": "100%"});
-            $("#name").css({"font-size": "32px", "margin": "30px 0", "color": "#111"});
-            $(".lang-selector").css({"right": "35px", "width": "32px"});
-            $(".lang-selector-label").css({"top": "33px", "right": "73px"});
-            $("#summary").slideDown();
-            // if ($(window).width() > 1085) {
-                $("#header").find("nav").css("top", "150px");
-            // } else {
-            //     $("#header").find("nav").css("top", "430px");
-            // }
-            // if ($(window).width() > 1336) {
-                $(".last-left").css("margin-right", "190px");
-                $(".first-right").css("margin-left", "190px");
-            // } else if ($(window).width() > 1085) {
-            //     $(".last-left").css("margin-right", "160px");
-            //     $(".first-right").css("margin-left", "160px");
-            // } else {
-            //     $(".last-left").css("margin-right", "10px");
-            //     $(".first-right").css("margin-left", "10px");
-            // }
-        }
-    }
-
     function removeStyle() {
 
     }
@@ -66,13 +32,7 @@ $(document).ready(function () {
         // Change image on click
         .click(
             function () {
-                var avatar = $("#avatar");
-                if(avatar.hasClass("active")) {
-                    avatar.removeClass("active");
-                    avatarAnimation("up");
-                } else {
-                    
-                }
+                $("#avatar").removeClass("active");
 
                 if (!$(this).hasClass("active")) {
                     var active = $("nav ul li a.active");
@@ -101,11 +61,7 @@ $(document).ready(function () {
         )
         .find("a").click(
         function () {
-            var avatar = $("#avatar");
-            if(!avatar.hasClass("active")) {
-                avatar.addClass("active");
-                avatarAnimation("down");
-            }
+            $("#avatar").addClass("active");
 
             var active = $("nav ul li a.active");
             if (active.html()) {

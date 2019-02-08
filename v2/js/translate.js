@@ -299,17 +299,27 @@ $(function () {
             pt_br: "Todo meu portifólio técnico está em",
             en: "See all my technical portfolio on"
         },
+        portfolioScreenshots: {
+            pt_br: "<strong>Telas</strong>",
+            en: "<strong>Screenshots</strong>"
+        },
         portfolioContent1: {
-            pt_br: "Portal de Gerenciamento e Acompanhamento Centralizado dos Indicadores de vários departamentos de uma empresa, integrando diversos bancos de dados e fontes de informação",
-            en: "KPI Management portal with centralized monitoring of the company’s department, integrating several databases and information sources"
+            pt_br: "<strong>Resumo</strong>: Portal de Gerenciamento e Acompanhamento Centralizado dos Indicadores de vários departamentos de uma empresa, integrando diversos bancos de dados e fontes de informação" + "<br><br>" +
+            "<strong>Tecnologias Utilizadas</strong>: AngularJS (HTML 5, CSS 3, Javascript)" + "<br><br>",
+            en: "<strong>Summary</strong>: KPI Management portal with centralized monitoring of the company’s department, integrating several databases and information sources" + "<br><br>" +
+            "<strong>Frameworks</strong>: AngularJS (HTML 5, CSS 3, Javascript)" + "<br><br>"
         },
         portfolioContent2: {
-            pt_br: "Portal de Controle de Parceiros da Oobj construído em AngularJS",
-            en: "Oobj’s Partners Control portal built in AngularJS"
+            pt_br: "<strong>Resumo</strong>: Portal de Controle de Parceiros da Oobj construído em AngularJS" + "<br><br>" +
+            "<strong>Tecnologias Utilizadas</strong>: AngularJS (HTML 5, CSS 3, Javascript)" + "<br><br>",
+            en: "<strong>Summary</strong>: Oobj’s Partners Control portal built in AngularJS" + "<br><br>" +
+            "<strong>Frameworks</strong>: AngularJS (HTML 5, CSS 3, Javascript)" + "<br><br>"
         },
         portfolioContent3: {
-            pt_br: "Portal de Conhecimento da Oobj com mais de 2 milhões de acessos que reúne artigos sobre Documentos Fiscais adaptado de um framework em PHP",
-            en: "Oobj’s Knowledge Base adapted from a PHP framework with over 2 million hits containing articles related to invoices and tax documents"
+            pt_br: "<strong>Resumo</strong>: Portal de Conhecimento da Oobj com mais de 2 milhões de acessos que reúne artigos sobre Documentos Fiscais adaptado de um framework em PHP" + "<br><br>" +
+            "<strong>Tecnologias Utilizadas</strong>: CMS (Sistema de Gestão de Conteúdo) desenvolvido em PHP" + "<br><br>",
+            en: "<strong>Summary</strong>: Oobj’s Knowledge Base adapted from a PHP framework with over 2 million hits containing articles related to invoices and tax documents" + "<br><br>" +
+            "<strong>Frameworks</strong>: CMS (Content Management System) delevoped using PHP" + "<br><br>"
         },
         portfolioContentButton1: {
             pt_br: "Ver mais",
