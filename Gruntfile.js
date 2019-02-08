@@ -37,11 +37,11 @@ module.exports = function(grunt) {
             providerJs: {
                 src: [
                     'bower_components/jquery/dist/jquery.min.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'bower_components/uikit/js/uikit.min.js',
-                    'bower_components/uikit/js/core/smooth-scroll.min.js',
-                    'bower_components/uikit/js/components/slideshow.min.js',
-                    'bower_components/moment/min/moment.min.js',
+                    // 'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    // 'bower_components/uikit/js/uikit.min.js',
+                    // 'bower_components/uikit/js/core/smooth-scroll.min.js',
+                    // 'bower_components/uikit/js/components/slideshow.min.js',
+                    // 'bower_components/moment/min/moment.min.js',
                     'bower_components/translate.js/jquery.translate.js'
                 ],
                 dest: 'dist/js/vendor.js'
@@ -51,19 +51,19 @@ module.exports = function(grunt) {
                     'css/**/*.css'
                 ],
                 dest: 'dist/css/<%= pkg.name %>.css'
-            },
-            providerCss: {
-                src: [
-                    'bower_components/uikit/css/uikit.min.css',
-                    'bower_components/uikit/css/components/slideshow.min.css',
-                    'bower_components/uikit/css/components/slidenav.min.css',
-                    'bower_components/uikit/css/components/dotnav.min.css',
-                    'bower_components/bootstrap/dist/css/bootstrap.min.css',
-                    'bower_components/font-awesome/css/font-awesome.min.css',
-                    'https://fonts.googleapis.com/css?family=Roboto'
-                ],
-                dest: 'dist/css/vendor.css'
-            }
+            }//,
+            // providerCss: {
+            //     src: [
+            //         // 'bower_components/uikit/css/uikit.min.css',
+            //         // 'bower_components/uikit/css/components/slideshow.min.css',
+            //         // 'bower_components/uikit/css/components/slidenav.min.css',
+            //         // 'bower_components/uikit/css/components/dotnav.min.css',
+            //         // 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+            //         // 'bower_components/font-awesome/css/font-awesome.min.css',
+            //         // 'https://fonts.googleapis.com/css?family=Roboto'
+            //     ],
+            //     dest: 'dist/css/vendor.css'
+            // }
         },
         // The following *-min tasks will produce minified files in the dist folder
         // By default, your `index.html`'s <!-- Usemin block --> will take care of

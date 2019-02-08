@@ -1,6 +1,14 @@
-## Lucas Balbino's website
+## [Lucas Balbino](http://lucasbalbino.com)
 
-See [lucasbalbino.com](http://lucasbalbino.com).
+Product manager 💻, Delos host 🤖 and Ravenclaw alumni 🧙
+
+[lucasbalbino.com](http://lucasbalbino.com)
+
+![](http://lucasbalbino.com/img/avatar.png)
+
+---
+
+<a target="blank" href="https://www.blockchain.com/btc/payment_request?address=19U7ieBEPUdHunPwJcxaiuuSbb7z6EsP6M" style="background-color: #3c153b; color: #fff; text-decoration: none; padding: 10px 20px; border-bottom: 3px solid #8b1e3f;"> Donate Bitcoin <i class="fab fa-btc"></i> </a>
 
 ---
 

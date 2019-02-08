@@ -1,86 +1,81 @@
 $(document).ready(function () {
     var languages = ['pt_br', 'en'];
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function () {
-        $('a.page-scroll').bind('click', function (event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
-    });
+    function hideSections() {
+        $("#blog").hide();
+        $("#work").hide();
+        $("#study").hide();
+        $("#skills").hide();
+        $("#portfolio").hide();
+        $("#contact").hide();
+        $("#resume").hide();
+    }
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function () {
-        $(this).closest('.collapse').collapse('toggle');
-    });
-
-    // Implementation of the parallax effect
-    $('.parallax-bg').each(function () {
-        var $obj = $(this);
-
-        $(window).scroll(function () {
-            var yPos = -($(window).scrollTop() / $obj.data('speed'));
-
-            var bgpos = '50% calc(' + yPos + 'px + 100%)';
-
-            $obj.css('background-position', bgpos);
-
-        });
-    });
-
-    // Stair's animation
-    $('.step').click(function () {
-        $('.step-content')
-            .removeClass('active')
-            .eq($('.step')
-                .removeClass('active')
-                .index(this))
-            .addClass('active uk-animation-slide-top');
-
-        $(this).addClass('active');
-    });
-
-    // Set the current age
-    $('#age').text(
-        moment().diff(
-            moment([1991, 7, 26]), 'years'
+    $("nav ul li a")
+    // Change image on nav on hover
+        .hover(
+            function () {
+                if (!$(this).hasClass("active") && $(this).find("img").attr("src").indexOf("hover") === -1) {
+                    $(this).find("img").attr("src", "img/hover-" + $(this).find("img").attr("src").substr(4));
+                }
+            },
+            function () {
+                if (!$(this).hasClass("active") && $(this).find("img").attr("src").indexOf("hover") !== -1) {
+                    $(this).find("img").attr("src", "img/" + $(this).find("img").attr("src").substr(10));
+                }
+            }
         )
+        // Change image on click
+        .click(
+            function () {
+                $("#avatar").removeClass("active");
+
+                if (!$(this).hasClass("active")) {
+                    var active = $("nav ul li a.active");
+                    if (active.html()) {
+                        if (active.find("img").attr("src").indexOf("hover") !== -1) {
+                            active.find("img").attr("src", "img/" + active.find("img").attr("src").substr(10));
+                        }
+                        active.removeClass("active");
+                    }
+                    $(this).addClass("active");
+                }
+
+                hideSections();
+                $("#" + $(this).find("span").attr("class").split(" ")[0].substr(4)).show();
+            });
+
+    // Change avatar image on hover
+    $("#avatar")
+        .hover(
+            function () {
+                $(this).find("#profile").attr("src", "img/real-" + $(this).find("#profile").attr("src").substr(4));
+            },
+            function () {
+                $(this).find("#profile").attr("src", "img/" + $(this).find("#profile").attr("src").substr(9));
+            }
+        )
+        .find("a").click(
+        function () {
+            $("#avatar").addClass("active");
+
+            var active = $("nav ul li a.active");
+            if (active.html()) {
+                if (active.find("img").attr("src").indexOf("hover") !== -1) {
+                    active.find("img").attr("src", "img/" + active.find("img").attr("src").substr(10));
+                }
+                active.removeClass("active");
+            }
+
+            hideSections();
+        }
     );
 
-    // Send form to email with Formspree
-    $('#form').submit(function (e) {
-        $('.successForm').slideUp(400);
-        $('.errorForm').slideUp(400);
-
-        var name = $('#formName');
-        var email = $('#formEmail');
-        var message = $('#formMessage');
-
-        if (name.val() === "" || email.val() === "" || message.val() === "") {
-            $('.errorForm').slideDown(400);
-            return false;
-        }
-        else {
-            $.ajax({
-                method: 'POST',
-                url: 'https://estreias.com.br/api/contato',
-                data: $('#form').serialize(),
-                datatype: 'json'
-            });
-            e.preventDefault();
-            $(this).get(0).reset();
-            $('.successForm').slideDown(400);
-        }
-    });
-
     // Set the curriculum's correct link
-    $('#curriculum').click(function (e) {
+    $('#curriculum').click(function () {
         var lang = $(".lang-selector").attr("data-value");
         var newLang = languages[(languages.indexOf(lang) + 1) % languages.length];
-        if(newLang === "pt_br") {
+        if (newLang === "pt_br") {
             $(this).attr({
                 target: 'blank',
                 href: 'https://bit.ly/LucasBalbinoCurriculo'
@@ -92,4 +87,18 @@ $(document).ready(function () {
             });
         }
     });
+
+    // Console
+    console.log(" ▄█       ███    █▄   ▄████████    ▄████████    ▄████████      ▀█████████▄     ▄████████  ▄█       ▀█████████▄   ▄█  ███▄▄▄▄    ▄██████▄  " + "\n" +
+        "███       ███    ███ ███    ███   ███    ███   ███    ███        ███    ███   ███    ███ ███         ███    ███ ███  ███▀▀▀██▄ ███    ███ " + "\n" +
+        "███       ███    ███ ███    █▀    ███    ███   ███    █▀         ███    ███   ███    ███ ███         ███    ███ ███▌ ███   ███ ███    ███ " + "\n" +
+        "███       ███    ███ ███          ███    ███   ███              ▄███▄▄▄██▀    ███    ███ ███        ▄███▄▄▄██▀  ███▌ ███   ███ ███    ███ " + "\n" +
+        "███       ███    ███ ███        ▀███████████ ▀███████████      ▀▀███▀▀▀██▄  ▀███████████ ███       ▀▀███▀▀▀██▄  ███▌ ███   ███ ███    ███ " + "\n" +
+        "███       ███    ███ ███    █▄    ███    ███          ███        ███    ██▄   ███    ███ ███         ███    ██▄ ███  ███   ███ ███    ███ " + "\n" +
+        "███▌    ▄ ███    ███ ███    ███   ███    ███    ▄█    ███        ███    ███   ███    ███ ███▌    ▄   ███    ███ ███  ███   ███ ███    ███ " + "\n" +
+        "█████▄▄██ ████████▀  ████████▀    ███    █▀   ▄████████▀       ▄█████████▀    ███    █▀  █████▄▄██ ▄█████████▀  █▀    ▀█   █▀   ▀██████▀  " + "\n" +
+        "▀                                                                                        ▀                                                " +
+        "\n\n[PT-BR] Este é meu site pessoal. Acesse meus projetos aqui: https://www.github.com/lucasbalbino" +
+        "\n[ EN  ] This is my personal site. You can find my technical portfolio here: https://www.github.com/lucasbalbino" +
+        "\n\n");
 });
