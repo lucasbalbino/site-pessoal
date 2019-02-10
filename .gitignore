@@ -60,5 +60,6 @@ bower_components
 .idea
 
 ### Outros ###
+dist
 tmp
 src
