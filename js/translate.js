@@ -48,8 +48,8 @@ $(function () {
             en: "Certifications"
         },
         summary: {
-            pt_br: "Profissional de TI focado na <strong>Gestão de Produto</strong> com espírito não apenas <strong>criativo</strong>, mas <strong>inovador</strong>. Entre meus pontos fortes estão <strong>bom relacionamento interpessoal</strong>, <strong>rápido aprendizado</strong> e <strong>sede de conhecimento</strong>. Com mais de <strong>6 anos</strong> de experiência profissional, sigo evoluindo e aprendendo novas formas de integrar a <strong>Tecnologia</strong> com várias áreas: <strong>Desenvolvimento</strong>, <strong>Marketing</strong>, <strong>Comercial</strong> e <strong>Customer Success</strong>.",
-            en: "IT Professional specialized on <strong>Product Ownership</strong> with a <strong>creative</strong> spirit and <strong>innovative</strong> behavior. I can list as strengths an impeccable <strong>interpersonal relationship</strong>, fast <strong>learning skills</strong> and thirst of <strong>knowledge</strong>. With over <strong>6 years</strong> of work experience, I keep evolving and learning new ways of integrating <strong>Technology</strong> to several areas: <strong>Development</strong>, <strong>Marketing</strong>, <strong>Sales</strong> and <strong>Customer Success</strong>."
+            pt_br: "Profissional de TI focado na <strong>Gestão de Produto</strong> com espírito não apenas <strong>criativo</strong>, mas <strong>inovador</strong>. Entre meus pontos fortes estão <strong>bom relacionamento interpessoal</strong>, <strong>rápido aprendizado</strong> e <strong>sede de conhecimento</strong>. Com mais de <strong>7 anos</strong> de experiência profissional, sigo evoluindo e aprendendo novas formas de integrar a <strong>tecnologia</strong> com várias áreas: <strong>desenvolvimento</strong>, <strong>marketing</strong>, <strong>negócios</strong> e <strong>customer success</strong>.",
+            en: "IT professional specialized in <strong>Product Ownership</strong> with a <strong>creative</strong> spirit and <strong>innovative</strong> behaviour. I can list as strengths my impeccable <strong>interpersonal relationship</strong>, fast <strong>learning skills</strong> and thirst of <strong>knowledge</strong>. With over <strong>7 years</strong> of work experience, I keep evolving and learning new ways of integrating <strong>technology</strong> to several areas: <strong>development</strong>, <strong>marketing</strong>, <strong>sales</strong> and <strong>customer success</strong>."
         },
         successForm: {
             pt_br: "Mensagem enviada com sucesso!",
@@ -61,41 +61,103 @@ $(function () {
         },
         workJob0: {
             pt_br: "Gerente de Produto",
-            en: "Product Manager"
+            en: "Product Specialist"
         },
         workJobTime0: {
-            pt_br: "de Janeiro de 2017 até atualmente (mais de 2 anos)",
-            en: "January 2017 - Present (over 2 years)"
+            pt_br: "de Junho de 2019 até atualmente (1 ano)",
+            en: "June 2019 - Present (1 year)"
         },
         workContent0: {
             pt_br: "<ul class='description'>" +
-            "<li>Responsável pela Gestão de Produto da empresa e pela integração entre as áreas Comercial (negócio) e Operação (Suporte e Desenvolvimento)</li>" +
-            "<li>Gerenciamento e acompanhamento do roadmap e do Portfólio</li>" +
-            "<li>Criação de protótipos de interfaces (focadas em UI/UX), análise de requisitos, desenho de fluxos das soluções existentes e de novas funcionalidades</li>" +
-            "<li>Integração e adequação de produtos de parceiros ao Portfólio da empresa</li>" +
-            "<li>Aplicação de estratégias de Growth e ferramentas que auxiliem a alavancar os produtos</li>" +
-            "<li>Comunicação sobre a evolução dos produtos</li>" +
-            "<li>Documentação e treinamento à equipe sobre os produtos</li>" +
-            "</ul>",
+                "<li>Responsável pelo processo de product discovery da squad de Retenção e Expansão de Clientes:</li>" +
+                "<ul>" +
+                "<li>Estruturação do lean canvas</li>" +
+                "<li>Definição dos objetivos e resultados-chave (OKR)</li>" +
+                "<li>Prototipação</li>" +
+                "<li>Análise de dados</li>" +
+                "<li>Descrição das histórias de usuário</li>" +
+                "</ul>" +
+                "<li>Product owner da squad de Retenção e Expansão de Clientes (product delivery):</li>" +
+                "<ul>" +
+                "<li>Planejamento do sprint backlog</li>" +
+                "<li>Priorização</li>" +
+                "<li>Tomada de decisão e resolução de problemas relativos ao desenvolvimento do produto</li>" +
+                "</ul>" +
+                "<li>Facilitador entre as áreas integrantes da squad:</li>" +
+                "<ul>" +
+                "<li>Negócio (times de Inside Sales e Customer Success)</li>" +
+                "<li>Engenharia (times de desenvolvimento, QA e SRE)</li>" +
+                "<li>Design</li>" +
+                "</ul>" +
+                "<li>Responsável pelo roadmap de produto da squad juntando a visão da liderança da empresa, métricas estratégicas e metas financeiras com a definição de sprints do quarter e as atividades e tarefas diárias</li>" +
+                "<li>Trabalho junto ao Product Designer para entregar a melhor solução para nossos clientes</li>" +
+                "<li>Guardião dos rituais do Scrum e dos alinhamentos de product discovery</li>" +
+                "<li>Conhecimento profundo sobre a parte técnica do sistema brasileiro de Documentos Fiscais Eletrônicos atuando como um Especialista de Produto em assuntos relacionados</li>" +
+                "</ul>",
             en: "<ul class='description'>" +
-            "<li>Responsible for the company’s Product Management and for Sales (Business) and Operation (Dev and Customer Success) communication</li>" +
-            "<li>Roadmap and Portfolio’s monitoring and management</li>" +
-            "<li>Interface prototype creation (focused on UI / UX), requirements analysis, flows drawing of existing solutions and new features</li>" +
-            "<li>Integration and adaptation of partners' products to the company portfolio</li>" +
-            "<li>Application of Growth strategies and tools to help boost products</li>" +
-            "<li>Communication about the evolution of products</li>" +
-            "<li>Documentation and training to the team about the products</li>" +
-            "</ul>"
+                "<li>Responsible for the product discovery process of Client Retention and Expansion squad:</li>" +
+                "<ul>" +
+                "<li>Lean canvas structuring</li>" +
+                "<li>Objectives and key results (OKR) definition</li>" +
+                "<li>Prototyping</li>" +
+                "<li>Data analysis</li>" +
+                "<li>User story description</li>" +
+                "</ul>" +
+                "<li>Product owner of Client Retention and Expansion squad product delivery:</li>" +
+                "<ul>" +
+                "<li>Sprint backlog planning</li>" +
+                "<li>Prioritization</li>" +
+                "<li>Product’s problem-solving and decision-making regarding development details</li>" +
+                "</ul>" +
+                "<li>Facilitator between squad areas:</li>" +
+                "<ul>" +
+                "<li>Business (Inside Sales and Customer Success teams)</li>" +
+                "<li>Engineering (development, QA and SRE teams)</li>" +
+                "<li>Design</li>" +
+                "</ul>" +
+                "<li>Manager of squad’s Product Roadmap attaching Arquivei’s leadership view, strategic metrics and financial goals with quarterly sprint plans and day-to-day activities and tasks</li>" +
+                "<li>Teaming up with a Product Designer to deliver the best solution to our clients</li>" +
+                "<li>Guardian of Scrum rituals and product discovery alignments </li>" +
+                "<li>Deep knowledge of the Brazilian invoice technical system acting as a Product Specialist on the matter</li>" +
+                "</ul>"
         },
         workJob1: {
+            pt_br: "Gerente de Produto",
+            en: "Product Manager"
+        },
+        workJobTime1: {
+            pt_br: "de Janeiro de 2017 até Junho de 2019 (2 anos e 6 meses)",
+            en: "January 2017 - June 2019 (2 years 6 months)"
+        },
+        workContent1: {
+            pt_br: "<ul class='description'>" +
+                "<li>Responsável pela Gestão de Produto da empresa e pela integração entre as áreas Comercial (negócio) e Operação (Suporte e Desenvolvimento)</li>" +
+                "<li>Gerenciamento e acompanhamento do roadmap e do Portfólio</li>" +
+                "<li>Criação de protótipos de interfaces (focadas em UI/UX), análise de requisitos, desenho de fluxos das soluções existentes e de novas funcionalidades</li>" +
+                "<li>Integração e adequação de produtos de parceiros ao Portfólio da empresa</li>" +
+                "<li>Aplicação de estratégias de Growth e ferramentas que auxiliem a alavancar os produtos</li>" +
+                "<li>Comunicação sobre a evolução dos produtos</li>" +
+                "<li>Documentação e treinamento à equipe sobre os produtos</li>" +
+                "</ul>",
+            en: "<ul class='description'>" +
+                "<li>Responsible for the company’s Product Management and for Sales (Business) and Operation (Dev and Customer Success) communication</li>" +
+                "<li>Roadmap and Portfolio’s monitoring and management</li>" +
+                "<li>Interface prototype creation (focused on UI / UX), requirements analysis, flows drawing of existing solutions and new features</li>" +
+                "<li>Integration and adaptation of partners' products to the company portfolio</li>" +
+                "<li>Application of Growth strategies and tools to help boost products</li>" +
+                "<li>Communication about the evolution of products</li>" +
+                "<li>Documentation and training to the team about the products</li>" +
+                "</ul>"
+        },
+        workJob2: {
             pt_br: "Analista de Negócios",
             en: "IT Business Analyst"
         },
-        workJobTime1: {
+        workJobTime2: {
             pt_br: "de Novembro de 2014 até Janeiro de 2017 (2 anos e 2 meses)",
             en: "November 2014 - January 2017 (2 years 2 months)"
         },
-        workContent1: {
+        workContent2: {
             pt_br: "<ul class='description'>" +
             "<li>Marketing Digital da empresa incluindo:" +
             "<ul>" +
@@ -144,15 +206,15 @@ $(function () {
             "</li>" +
             "</ul>"
         },
-        workJob2: {
+        workJob3: {
             pt_br: "Analista de Suporte",
             en: "Customer Service"
         },
-        workJobTime2: {
+        workJobTime3: {
             pt_br: "de Março de 2013 até Novembro de 2014 (1 ano e 9 meses)",
             en: "March 2013 - November 2014 (1 year 9 months)"
         },
-        workContent2: {
+        workContent3: {
             pt_br: "<ul class='description'>" +
             "<li>Realização de treinamentos para novos colaboradores e capacitação dos veteranos</li>" +
             "<li>Auditoria em chamados</li>" +
@@ -169,15 +231,15 @@ $(function () {
             "<li>Client-side and employee-side services documentation</li>" +
             "</ul>"
         },
-        workJob3: {
+        workJob4: {
             pt_br: "Analista de Processos",
             en: "IT Process Analyst"
         },
-        workJobTime3: {
+        workJobTime4: {
             pt_br: "de Novembro de 2012 até Fevereiro de 2013 (4 meses)",
             en: "November 2012 - February 2013 (4 months)"
         },
-        workContent3: {
+        workContent4: {
             pt_br: "Estágio não-obrigatório." + "<br>" +
             "<ul class='description'>" +
             "<li>Mapeamento de processos organizacionais da Coordenadoria de Registro de Diplomas</li>" +
@@ -295,6 +357,10 @@ $(function () {
             pt_br: "Competências Técnicas",
             en: "Technical Skills"
         },
+        technicalSkillsIntro: {
+            pt_br: "Fiz parte de alguns projetos como desenvolvedor frontend e tenho um bom conhecimento sobre:",
+            en: "I worked on side projects as a frontend developer and have a good understanding of:"
+        },
         seePortfolio: {
             pt_br: "Todo meu portifólio técnico está em",
             en: "See all my technical portfolio on"
@@ -368,6 +434,10 @@ $(function () {
         all: {
             pt_br: "Ver todos",
             en: "See All"
+        },
+        seeResume: {
+            pt_br: "Acesse aqui meu currículo atualizado",
+            en: "See my complete professional resume"
         }
     };
 

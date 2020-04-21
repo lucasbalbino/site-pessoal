@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
 
     $("nav ul li a")
-    // Change image on nav on hover
+        // Change image on nav on hover
         .hover(
             function () {
                 if (!$(this).hasClass("active") && $(this).find("img").attr("src").indexOf("hover") === -1) {
@@ -72,7 +72,7 @@ $(document).ready(function () {
     );
 
     // Set the curriculum's correct link
-    $('#curriculum').click(function () {
+    $('.curriculum').click(function () {
         var lang = $(".lang-selector").attr("data-value");
         var newLang = languages[(languages.indexOf(lang) + 1) % languages.length];
         if (newLang === "pt_br") {
@@ -92,4 +92,29 @@ $(document).ready(function () {
     console.log("[PT-BR] Este é meu site pessoal. Acesse meus projetos aqui: https://www.github.com/lucasbalbino" +
         "\n[ EN  ] This is my personal site. You can find my technical portfolio here: https://www.github.com/lucasbalbino" +
         "\n\n");
+
+    var hash = window.location.hash;
+    switch (hash) {
+        case "#blog":
+            $("nav ul li a span.nav-blog").trigger("hover").trigger("click");
+            break;
+        case "#work":
+            $("nav ul li a span.nav-work").trigger("click");
+            break;
+        case "#study":
+            $("nav ul li a span.nav-study").trigger("click");
+            break;
+        case "#skills":
+            $("nav ul li a span.nav-skills").trigger("click");
+            break;
+        case "#portfolio":
+            $("nav ul li a span.nav-portfolio").trigger("click");
+            break;
+        case "#contact":
+            $("nav ul li a span.nav-contact").trigger("click");
+            break;
+        case "#resume":
+            $("nav ul li a span.nav-resume").trigger("click");
+            break;
+    }
 });

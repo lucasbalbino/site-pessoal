@@ -1729,17 +1729,17 @@ a {
     display: none;
 }
 
-#resume .button {
+#resume .button, .resume.button {
     text-align: center;
     margin-top: 100px;
     padding-bottom: 100px;
     overflow: unset;
 }
 
-#resume .button a {
+#resume .button a, .resume.button a {
     cursor: pointer;
     background-color: #8b1e3f;
-    color: #fff;
+    color: #fff !important;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 15px 70px;
@@ -1750,14 +1750,19 @@ a {
     box-shadow: 10px 10px 0 0 rgba(183, 183, 183, 0.5);
 }
 
-#resume .button a:hover {
+.resume.button.invert a {
+    background-color: #fff;
+    color: #8b1e3f !important;
+}
+
+#resume .button a:hover, .resume.button a:hover {
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 15px 100px;
 }
 
 @media only screen and (max-width: 1055px) {
-    #resume .button {
+    #resume .button, .resume.button {
         padding-bottom: 150px;
     }
 }

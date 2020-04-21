@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             providerJs: {
                 src: [
                     'bower_components/jquery/dist/jquery.min.js',
-                    'bower_components/translate.js/jquery.translate.js'
+                    'bower_components/jquery.translatejs/jquery.translate.js'
                 ],
                 dest: 'dist/js/vendor.js'
             },
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                     cwd: '',
                     src: [
                         '*{,*/}*.{png,jpg,jpeg,gif,svg}',
-                        '!portfolio/*{,*/}*.{png,jpg,jpeg,gif,svg}',
+                        '!bower_components/*{,*/}*.{png,jpg,jpeg,gif,svg}',
                         '!node_modules/*{,*/}*.{png,jpg,jpeg,gif,svg}'
                     ],
                     dest: 'dist'
@@ -116,8 +116,6 @@ module.exports = function(grunt) {
                             '**',
                             '!js/*{,*/}*.js',
                             '!css/*{,*/}*.css',
-                            '!portfolio/*{,*/}*.css',
-                            '!certification/*{,*/}*.css',
                             '!*{,*/}*.bak'
                         ]
                     }
@@ -167,7 +165,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'clean',
-        //'jshint',
+        // 'jshint',
         'useminPrepare',
         'concat',
         'cssmin',
